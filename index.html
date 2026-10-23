@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Platformă de antrenament pentru grilele de biologie — admitere medicină Timișoara.">
+  <title>BioMed — Admitere Biologie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <a class="brand" href="#" data-view="home"><span class="brand-mark">✳</span><span>Bio<span class="brand-accent">Med</span><small>ADMITERE • BIOLOGIE</small></span></a>
+    <div class="nav-label">MENIU</div>
+    <button class="nav-item active" data-view="home"><span>⌂</span> Acasă</button>
+    <button class="nav-item" data-view="practice"><span>▤</span> Rezolvă grile</button>
+    <button class="nav-item" data-view="progress"><span>◔</span> Progresul meu</button>
+    <div class="sidebar-bottom">
+      <div class="side-note"><span class="note-icon">✦</span><b>Pas cu pas.</b><p>Fiecare grilă rezolvată te apropie de obiectivul tău.</p></div>
+      <div class="profile"><div class="avatar">B</div><div><b>Viitor student</b><small>Mod de învățare</small></div><span class="profile-dot"></span></div>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <div class="mobile-brand">✳ Bio<span class="brand-accent">Med</span></div>
+      <div class="breadcrumb">Spațiul tău de învățare <span>/</span> <b id="crumb">Acasă</b></div>
+      <div class="top-actions"><span class="today-chip">● Sesiune de studiu</span><button class="icon-button" title="Aspect vizual" id="themeToggle">◐</button></div>
+    </header>
+
+    <section class="view active" id="homeView">
+      <div class="welcome-row">
+        <div><p class="eyebrow">BINE AI VENIT ÎNAPOI</p><h1>Un pas mai aproape de <span>Medicină.</span></h1><p class="subhead">Exersează constant. Înțelege greșelile. Construiește-ți încrederea, grilă cu grilă.</p></div>
+        <div class="hero-symbol"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="hero-cross">+</div><span class="hero-dot d1"></span><span class="hero-dot d2"></span></div>
+      </div>
+      <div class="stats-grid">
+        <article class="stat-card"><div class="stat-top"><span>Grile rezolvate</span><span class="stat-icon purple">▤</span></div><strong id="statAnswered">0</strong><small>în total</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Răspunsuri corecte</span><span class="stat-icon green">✓</span></div><strong id="statCorrect">0</strong><small id="accuracyText">Începe prima sesiune</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Precizie</span><span class="stat-icon orange">◎</span></div><strong id="statAccuracy">—</strong><small>din grilele validate</small></article>
+      </div>
+      <div class="section-heading"><div><p class="eyebrow">CONTINUĂ PREGĂTIREA</p><h2>Alege cum vrei să exersezi</h2></div><span class="muted">Materiale demonstrative incluse</span></div>
+      <div class="action-grid">
+        <article class="action-card featured"><div class="action-icon">✎</div><div class="card-tag">RECOMANDAT</div><h3>Rezolvă grile</h3><p>Răspunde pe rând, validează și vezi imediat ce ai făcut bine.</p><button class="primary-button" data-view="practice">Începe antrenamentul <span>→</span></button></article>
+        <article class="action-card"><div class="action-icon mint">◴</div><h3>Urmărește progresul</h3><p>Vezi câte întrebări ai parcurs și cât de precis ai răspuns.</p><button class="text-button" data-view="progress">Vezi statistica <span>→</span></button></article>
+        <article class="action-card"><div class="action-icon peach">＋</div><h3>Adaugă grilele tale</h3><p>Poți importa întrebări dintr-un fișier JSON folosind instrucțiunile incluse.</p><a class="text-button" href="README.txt" target="_blank">Cum se importă <span>↗</span></a></article>
+      </div>
+      <div class="notice"><span class="notice-icon">i</span><div><b>Despre setul de întrebări</b><p>Site-ul pornește cu grile demonstrative, nu cu banca oficială completă. Adaugă materialele pe care ai dreptul să le folosești pentru a-ți construi setul de admitere.</p></div></div>
+    </section>
+
+    <section class="view" id="practiceView">
+      <div class="page-heading"><div><p class="eyebrow">MOD DE EXERSARE</p><h1>Rezolvă grile</h1><p class="subhead">Alege răspunsul, apoi apasă „Validează răspunsul”. Feedbackul apare imediat.</p></div><button class="secondary-button" id="resetSession">↻ Reia sesiunea</button></div>
+<div class="chapter-filter">
+  <div class="chapter-filter-head">
+    <label><b>Alege capitolele din care vrei grile:</b></label>
+    <div class="chapter-actions">
+      <button type="button" id="selectAllChapters" class="text-button">Bifează toate</button>
+      <button type="button" id="deselectAllChapters" class="text-button">Debifează toate</button>
+    </div>
+  </div>
+
+  <div class="chapter-checkboxes">
+    <label><input type="checkbox" class="chapter-checkbox" value="Introducere în anatomie și fiziologie" checked> Introducere în anatomie și fiziologie</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Țesuturile" checked> Țesuturile</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Metabolism" checked> Metabolism</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Funcțiile corpului" checked> Funcțiile corpului</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Reproducerea" checked> Reproducerea</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Homeostazia" checked> Homeostazia</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Citologie - Celule procariote" checked> Citologie - Celule procariote</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Citologie - Membrana plasmatică" checked> Citologie - Membrana plasmatică</label>
+    <!-- Poți adăuga mai multe capitole sub această formă -->
+  </div>
+
+  <div style="margin-top: 15px;">
+    <button type="button" id="applyChapterFilter" class="primary-button">
+      Generează test (max 200 grile) <span>→</span>
+    </button>
+  </div>
+</div>
+  <label for="chapterSelect">Capitolul din care vrei grile:</label>
+  <select id="chapterSelect">
+    <option value="ALL">Toate capitolele</option>
+    <option value="INTRODUCERE ÎN ANATOMIE ȘI FIZIOLOGIE.CELULA ȘI FIZIOLOGIA CELULARĂ">Introducere în anatomie şi fiziologie.
+Celulele şi fiziologia celulară</option>
+    <option value="ȚESUTURILE.SISTEMUL TEGUMENTAR"> Țesuturile. Sistemul tegumentar</option>
+    <option value="ȚESUTUL NERVOS.ORGANIZAREA SISTEMULUI NERVOS">Țesutul nervos.
+Organizarea sistemului nervos</option>
+    <option value="ORGANE DE SIMȚ"> Organe de simț</option>
+    <option value="ȚESUTUL OSOS"> Țesutul osos</option>
+  <option value="CAP.6">  Sistemul muscular</option>
+
+  </select>
+</div>
+      <div class="practice-layout">
+        <aside class="quiz-sidebar">
+          <div class="quiz-side-head"><span>SESIUNEA CURENTĂ</span><b id="questionCounter">01 / 05</b></div>
+          <div class="progress-track"><div id="sessionProgress"></div></div>
+          <p class="mini-label">ÎNTREBĂRI</p><div class="question-pills" id="questionPills"></div>
+          <div class="quiz-tip"><span>✦</span><b>Un mic sfat</b><p>Citește toate variantele înainte să alegi. După validare, feedbackul rămâne vizibil.</p></div>
+        </aside>
+        <div class="question-panel">
+          <div class="question-meta"><span class="topic-pill" id="questionTopic">BIOLOGIE</span><span id="questionNumberLabel">ÎNTREBAREA 01</span></div>
+          <h2 id="questionText">Se încarcă întrebarea…</h2>
+          <p class="select-hint">Selectează o singură variantă.</p>
+          <div class="answers" id="answers"></div>
+          <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+          <div class="question-footer"><span id="answeredStatus" class="muted">Niciun răspuns selectat</span><div class="footer-buttons"><button class="secondary-button" id="prevQuestion">← Înapoi</button><button class="primary-button" id="validateAnswer">Validează răspunsul <span>✓</span></button><button class="primary-button hidden" id="nextQuestion">Următoarea <span>→</span></button></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="view" id="progressView">
+      <div class="page-heading"><div><p class="eyebrow">REZULTATELE TALE</p><h1>Progresul meu</h1><p class="subhead">Urmărește-ți evoluția fără presiune — progresul se construiește în timp.</p></div><button class="secondary-button" id="clearProgress">Resetează progresul</button></div>
+      <div class="stats-grid progress-stats">
+        <article class="stat-card"><div class="stat-top"><span>Întrebări validate</span><span class="stat-icon purple">▤</span></div><strong id="progressAnswered">0</strong><small>în acest browser</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Corecte</span><span class="stat-icon green">✓</span></div><strong id="progressCorrect">0</strong><small>răspunsuri corecte</small></article>
+        <article class="stat-card"><div class="stat-top"><span>Precizie</span><span class="stat-icon orange">◎</span></div><strong id="progressAccuracy">—</strong><small>din totalul validat</small></article>
+      </div>
+      <div class="history-panel"><div class="section-heading"><div><p class="eyebrow">ACTIVITATE</p><h2>Întrebări parcurse</h2></div></div><div id="historyList" class="history-list"><div class="empty-state">Încă nu ai validat nicio grilă. Începe o sesiune și rezultatele vor apărea aici.</div></div></div>
+    </section>
+    <footer>BioMed • Platformă personală de antrenament <span>Creată pentru învățare, nu pentru a înlocui bibliografia oficială.</span></footer>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
