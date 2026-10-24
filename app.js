@@ -1,4 +1,5 @@
-const demoQuestions = [
+
+ const demoQuestions = [
   {
     id: "bio-001",
     topic: "Introducere în anatomie și fiziologie",
@@ -127,7 +128,7 @@ const demoQuestions = [
   },
   {
     id: "bio-010",
-    topic: "Țesuturile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "10. Selectați afirmațiile false cu privire la țesuturi:",
     options: [
       "A. Un grup de celule diferite ca structură şi organizare vor avea întotdeauna aceeaşi funcţie şi vor forma un ţesut",
@@ -136,12 +137,12 @@ const demoQuestions = [
       "D. Un organ este compus din două sau mai multe tipuri diferite de țesuturi",
       "E. Nivelul de organizare imediat superior țesuturilor este sistemul de organe"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-011",
-    topic: "Țesuturile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "11. Stabiliți care dintre răspunsurile de mai jos conțin prima și a treia afirmație adevărate, iar cea de a doua falsă:",
     options: [
       "A. Tipul de țesut din care face parte sângele este țesutul conjunctiv. Ţesutul osos spongios nu aparţine țesuturilor conjunctive. Celulele care protejează neuronii şi aparţin ţesutului nervos sunt denumite celule gliale",
@@ -150,12 +151,12 @@ const demoQuestions = [
       "D. Dermul de la nivelul pielii este o varietate de țesut epitelial. Ţesutul conjunctiv include sângele şi țesutul osos. Tesutul muscular striat scheletic nu reprezintă o varietate de țesut conjunctiv",
       "E. Nivelul de organizare imediat superior țesuturilor este organul. La cel mai simplu nivel, corpul uman este compus din ţesuturi. Celula nervoasă şi cea musculară sunt exemple de celule din organismul uman"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-012",
-    topic: "Țesuturile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "12. Alegeți afirmațiile false dintre cele enumerate mai jos:",
     options: [
       "A. Epidermul (care intră în structura tegumentului) reprezintă un tip de țesut epitelial",
@@ -164,12 +165,12 @@ const demoQuestions = [
       "D. Nivelul de organizare imediat superior ţesutului este sistemul de organe, compus din mai multe organe cu funcții complementare",
       "E. Sistemul de organe este compus din mai multe organe identice, cu funcții complementare"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-013",
-    topic: "Țesuturile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "13. Selectați enunțurile care prezintă prima afirmaţie adevărată și cea de-a doua falsă:",
     options: [
       "A. Un organ poate fi alcătuit din două sau mai multe tipuri diferite de țesuturi. Nu se întâlnesc în organism organe cu mai mult de 3 tipuri de ţesuturi în componenţa lor",
@@ -178,12 +179,12 @@ const demoQuestions = [
       "D. Sistemul muscular include muşchi striați, muşchi netezi şi muşchiul cardiac. Miocardul este o varietate de muşchi neted",
       "E. Sistemul urinar are ca şi componente rinichii, vezica urinară şi căile urinare asociate. Din asocierea mai multor celule între ele ia naştere nivelul molecular de organizare structurală al organismului"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-014",
-    topic: "Metabolism",
+    topic: "Metabolism și nutriție",
     text: "14. Care dintre următoarele afirmații referitoare la metabolism nu sunt adevărate?",
     options: [
       "A. Metabolismul constă în reacții chimice de sinteză şi de degradare, grupate în căi metabolice, care se desfăşoară exclusiv extracelular",
@@ -192,12 +193,12 @@ const demoQuestions = [
       "D. Catabolismul reprezintă degradarea moleculelor mari, de obicei cu producere de energie",
       "E. O cale metabolică presupune conlucrarea enzimelor implicate în reacţiile care o compun"
     ],
-    correct: [],
+    correct: [0, 2],
     explanation: ""
   },
   {
     id: "bio-015",
-    topic: "Metabolism",
+    topic: "Metabolism și nutriție",
     text: "15. Care dintre următoarele afirmații sunt adevărate?",
     options: [
       "A. Catabolismul reprezintă sinteza unor macromolecule (glicogen, colagen) din molecule mici (CO2, H2O, glucoză), cu eliberare de energie",
@@ -206,12 +207,12 @@ const demoQuestions = [
       "D. Substanţele care sunt utilizate în metabolism provin exclusiv din procesul de digestie celulară",
       "E. Componenta metabolismului prin care materia organică este descompusă, de obicei cu eliberare de energie, se numeste catabolism"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-016",
-    topic: "Funcțiile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "16. Selectați afirmațiile adevărate referitoare la mişcare:",
     options: [
       "A. Funcţia de mişcare este asigurată de celulele musculare, prin capacitatea lor de a efectua lucru mecanic şi de a se contracta",
@@ -220,12 +221,12 @@ const demoQuestions = [
       "D. La funcţia de mişcare participă muşchii scheletici, care oferă locuri de ataşare oaselor şi ligamentelor",
       "E. Mişcarea de tip involuntar este descrisă la muşchiului neted şi la muşchiul striat cardiac"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-017",
-    topic: "Funcțiile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "17. Alegeți asocierile corecte cu privire la funcţiile corpului:",
     options: [
       "A. Mişcarea - voluntară sau involuntară - rezultatul contracției fibrelor musculare (striate scheletice, netede, striate cardiace)",
@@ -234,12 +235,12 @@ const demoQuestions = [
       "D. Reproducerea asexuată - formarea în totalitate a unui nou individ - include spermatozoizii şi ovulele",
       "E. Reproducerea sexuată - producere de spermatozoizi şi ovule - fecundarea unui ovul de către un spermatozoid - diviziunea oului (zigotului) - dezvoltarea unui nou individ"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-018",
-    topic: "Reproducerea",
+    topic: "Introducere în anatomie și fiziologie",
     text: "18. Referitor la funcţia de reproducere a organismului, se pot afirma următoarele:",
     options: [
       "A. Reprezintă capacitatea organismului de a produce în totalitate un nou individ prin diviziunea meiotică a zigotului",
@@ -248,12 +249,12 @@ const demoQuestions = [
       "D. Diviziunea unei singure celule cu formarea a două celule fiice identice se numeşte reproducere asexuată şi are loc prin mitoză",
       "E. Reproducerea asexuată asigură procesele de creştere şi reparaţie"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-019",
-    topic: "Homeostazia",
+    topic: "Introducere în anatomie și fiziologie",
     text: "19. Care dintre următoarele enunțuri privind homeostazia conțin prima afirmație adevărată şi a doua falsă?",
     options: [
       "A. Totalitatea proceselor care contribuie la menținerea parametrilor mediului intern al organismului în limite normale se numeşte homeostazie. Homeostazia nu este compatibilă cu satisfacerea nevoilor nutritive şi energetice ale celulelor organismului",
@@ -262,12 +263,12 @@ const demoQuestions = [
       "D. În menținerea homeostaziei este implicat doar sistemul nervos. În homeostazie, parametrii mediului intern al organismului sunt menținuți în limitele normale, chiar dacă mediul înconjurător se modifică",
       "E. Diferite afecțiuni (boli), căldura excesivă, durerea sau absența oxigenului din sânge determină dezechilibre ale mediului intern al organismului. Valoarea de referinţă a unui mecanism de feed-back este reprezentată de dublul valorii normale a unui factor variabil"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-020",
-    topic: "Homeostazia",
+    topic: "Introducere în anatomie și fiziologie",
     text: "20. Referitor la homeostazie, se poate afirma că:",
     options: [
       "A. La menţinerea ei contribuie toate sistemele de organe",
@@ -276,26 +277,26 @@ const demoQuestions = [
       "D. Reprezintă totalitatea proceselor care contribuie la menținerea parametrilor mediului intern al organismului în limite normale, numai dacă mediul înconjurător nu se modifică",
       "E. Prin intermediul mecanismelor de feed-back, în organism sunt transmise informații de la un receptor la centrul de control, unde stimulul este transformat în răspuns, care apoi este transmis unui efector care va produce răspunsul care să mențină homeostazia"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-021",
-    topic: "Homeostazia",
+    topic: "Introducere în anatomie și fiziologie",
     text: "21. Alegeţi asocierile corecte cu privire la mecanismele de feed-back care contribuie la menținerea homeostaziei:",
     options: [
       "A. Feed-back negativ - mecanism de autoreglare prin care, în urma informației primite, scade producția sistemului, acesta revenind la valoarea sa de referință - mecanism care intervine (prin intermediul insulinei) în controlul glicemiei",
       "B. Glicemie scăzută după ingestia de alimente - eliberare de insulină din celulele insulelor Langerhans pancreatice - favorizarea intrării glucozei în celule - scăderea nivelului glicemiei - scăderea eliberării de insulină - menţinerea homeostaziei (feed-back negativ)",
       "C. Valoare de referință - valoarea normală a unui factor variabil (temperatura)",
       "D. Feed-back pozitiv - parte a unui mecanism general de reglare - deviere din ce în ce mai mare de la valoarea de referință - rezultatul este obținerea răspunsului dorit",
-      "E. Feed-back pozitiv - mecanism unic de menținere a homeostaziei - reglare care aduce sistemul la valoarea sa de referință"
+      "E. Feed-back pozitiv - mecanism unic de menţinere a homeostaziei - reglare care aduce sistemul la valoarea sa de referință"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-022",
-    topic: "Anatomie - Poziție anatomică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "22. Stabiliţi afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Atunci când corpul este în poziție anatomică, el se află în poziție verticală (clinostatism), cu membrele superioare pe lângă corp şi palmele orientate anterior",
@@ -304,26 +305,26 @@ const demoQuestions = [
       "D. În poziție anatomică, corpul prezintă două feţe, una medială (dreaptă) şi una laterală (stângă)",
       "E. Termenul „dorsal\" este opus termenului „ventral\" şi este utilizat în terminologia anatomică umană cu semnificația de „anterior\""
     ],
-    correct: [],
+    correct: [1, 2],
     explanation: ""
   },
   {
     id: "bio-023",
-    topic: "Anatomie - Termeni direcționali",
+    topic: "Introducere în anatomie și fiziologie",
     text: "23. Alegeţi succesiunile de afirmații adevărate dintre cele enumerate mai jos:",
     options: [
       "A. În poziție anatomică, palmele sunt orientate spre lateral. Termenul direcţional folosit pentru a descrie partea din față a corpului, de aceeaşi parte cu abdomenul, este „posterior\"",
       "B. Termenul „ipsilateral\" se referă la structuri aflate de aceeaşi parte a corpului. Termenul „superior\" defineşte poziția direcționată spre cap (cranială)",
-      "C. În locul termenului „superior\" se utilizează frecvent „cervical” sau „cranial\". Oprirea unei hemoragii implică un mecanism de feed-back negativ, la fel cu expulzia placentei ulterior expulziei fetale",
+      "C. În locul termenului „superior\" se utilizează frecvent „cervical” sau „cranial”. Oprirea unei hemoragii implică un mecanism de feed-back negativ, la fel cu expulzia placentei ulterior expulziei fetale",
       "D. Termenul „posterior\" se referă la partea din spate a corpului, acest termen poate fi înlocuit cu „dorsal\". Supradiafragmatic, în mediastin, esofagul este situat posterior față de trahee",
       "E. Termenul „caudal\" - alternativă pentru termenul „inferior\", este utilizat şi în anatomia umană. Segmentele colonului pot fi descrise ca „ipsilaterale\" dacă ne referim la colonul descendent şi colonul sigmoid sau „controlaterale\" dacă ne referim la colonul ascendent şi colonul descendent"
     ],
-    correct: [],
+    correct: [1 ,3, 4],
     explanation: ""
   },
   {
     id: "bio-024",
-    topic: "Anatomie - Termeni direcționali",
+    topic: "Introducere în anatomie și fiziologie",
     text: "24. Care dintre următoarele afirmații privind termenii direcționali sunt false?",
     options: [
       "A. În nomenclatura anatomică, se consideră că abdomenul (subdiviziunea superioară a cavității abdomino-pelviene) este situat inferior față de torace",
@@ -332,12 +333,12 @@ const demoQuestions = [
       "D. Termenul „controlateral\" se referă la structuri aflate de aceeaşi parte a corpului",
       "E. Termenul „lateral\" se referă la o poziție situată pe linia mediană a corpului"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-025",
-    topic: "Anatomie - Termeni direcționali",
+    topic: "Introducere în anatomie și fiziologie",
     text: "25. Alegeţi asocierile incorecte cu privire la termenii direcţionali ai corpului:",
     options: [
       "A. Mâna - proximal față de antebraț - proximal față de braț",
@@ -346,12 +347,12 @@ const demoQuestions = [
       "D. Braţ stâng - picior drept - controlateral",
       "E. Coapsa - distal față de gambă - distal față de picior"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-026",
-    topic: "Anatomie - Termeni direcționali",
+    topic: "Introducere în anatomie și fiziologie",
     text: "26. Utilizând termenii direcționali, se poate afirma că:",
     options: [
       "A. Față de gură, nasul şi ochii sunt situați superior",
@@ -360,12 +361,12 @@ const demoQuestions = [
       "D. Cavitatea toracică este situată superior față de cavitatea abdomino-pelviană, de care este separată prin diafragmă",
       "E. Muşchii peretelui toracic sunt superficiali în raport cu organele din cavitatea toracică"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-027",
-    topic: "Anatomie - Planurile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "27. Referitor la planurile corpului, se poate afirma că:",
     options: [
       "A. Planul vertical care împarte corpul într-o parte dreaptă și una stângă, se numeşte plan sagital",
@@ -374,12 +375,12 @@ const demoQuestions = [
       "D. Planurile parasagitale divid întotdeauna corpul în două părți egale",
       "E. Planul mediosagital împarte corpul în două jumătăți (dreaptă şi stângă)"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-028",
-    topic: "Anatomie - Planurile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "28. Selectați afirmațiile adevărate referitoare la planurile corpului:",
     options: [
       "A. Pot fi descrise ca suprafete drepte imaginare care traversează corpul",
@@ -388,12 +389,12 @@ const demoQuestions = [
       "D. Planurile traversează corpul uman şi oferă puncte de reper pentru organele acestuia",
       "E. Planul coronal formează un unghi drept cu planul frontal"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-029",
-    topic: "Anatomie - Cavitățile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "29. Care dintre următoarele afirmații referitoare la cavitatea dorsală (posterioară) a corpului sunt false?",
     options: [
       "A. Reprezintă, alături de cea anterioară, principalele cavități ale corpului",
@@ -402,12 +403,12 @@ const demoQuestions = [
       "D. Prezintă două subdiviziuni importante, reprezentate de cavitatea toracică şi de cea pelviană",
       "E. Canalul rahidian, subdiviziune a cavității posterioare a corpului, este delimitat de vertebre (oase neregulate)"
     ],
-    correct: [],
+    correct: [1, 3],
     explanation: ""
   },
   {
     id: "bio-030",
-    topic: "Anatomie - Cavitățile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "30. Care dintre următoarele afirmații privind cavitățile şi regiunile corpului sunt adevărate?",
     options: [
       "A. Inima, esofagul, traheea și bronhiile primare sunt localizate în mediastin, supradiafragmatic",
@@ -416,12 +417,12 @@ const demoQuestions = [
       "D. Stomacul este situat în subdiviziunea abdominală a cavității abdomino-pelviene",
       "E. Regiunea ombilicală se află în centrul abdomenului, iar regiunea epigastrică se localizează inferior de aceasta"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-031",
-    topic: "Anatomie - Cavitățile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "31. Sunt regiuni ale cavitații abdomino-pelviene următoarele:",
     options: [
       "A. Regiunea hipogastrică (hipogastrul), situată imediat superior de regiunea ombilicală",
@@ -430,12 +431,12 @@ const demoQuestions = [
       "D. Regiunea epigastrică, localizată superior de regiunea ombilicală",
       "E. Regiunea mediastinală care include cavitatea pericardică"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-032",
-    topic: "Anatomie - Cavitățile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "32. Alegeţi precizările corecte despre cavități și regiuni ale corpului:",
     options: [
       "A. La nivelul mediastinului sunt situate toate componentele cavității toracicе",
@@ -444,12 +445,12 @@ const demoQuestions = [
       "D. Intersectarea a două linii imaginare, una orizontală şi alta verticală, în centrul cavității abdomino-pelviene are ca rezultat delimitarea a patru cadrane",
       "E. Canalul rahidian, delimitat de meninge, este parte componentă a cavității posterioare a trunchiului şi conține lichid interstițial"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-033",
-    topic: "Anatomie - Cavitățile corpului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "33. Stabiliţi afirmațiile adevărate dintre cele enumerate mai jos:",
     options: [
       "A. Regiunea hipogastrică se află superior față de regiunea ombilicală",
@@ -458,12 +459,12 @@ const demoQuestions = [
       "D. Cele două flancuri (stâng şi drept) încadrează regiunea aflată în centrul abdomenului (regiunea ombilicală)",
       "E. Hipogastrul este flancat de cele două regiuni iliace, dreaptă şi stângă"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-034",
-    topic: "Anatomie - Membrane",
+    topic: "Introducere în anatomie și fiziologie",
     text: "34. Referitor la membranele cavităților corpului sunt false următoarele afirmaţii:",
     options: [
       "A. Pereții cavității abdominale şi organele abdominale sunt căptuşite de o membrană fină, alcătuită dintr-o singură foiță, numită membrană bazală",
@@ -472,12 +473,12 @@ const demoQuestions = [
       "D. Foița viscerală a peritoneului acoperă diverse organe ale cavității abdomino-pelviene",
       "E. Foița parietală a membranelor seroase înveleşte organele interne (viscerele) şi aderă de suprafața lor"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-035",
-    topic: "Anatomie - Cavități",
+    topic: "Introducere în anatomie și fiziologie",
     text: "35. Următoarele afirmații referitoare la cavitatea abdomino-pelviană sunt adevărate:",
     options: [
       "A. Face parte din cavitatea ventrală a corpului, alături de cavitatea toracică",
@@ -486,12 +487,12 @@ const demoQuestions = [
       "D. Este separată de cavitatea toracică printr-un muşchi de mari dimensiuni, în formă de cupolă - diafragma",
       "E. Nu conţine în cadrul subdiviziunii pelviană, vezica urinară şi rectul"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-036",
-    topic: "Anatomie - Membrane",
+    topic: "Introducere în anatomie și fiziologie",
     text: "36. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. În corpul uman există trei membrane seroase: pleura, pericardul şi peritoneul",
@@ -500,12 +501,12 @@ const demoQuestions = [
       "D. Foița parietală a peritoneului căptuşeşte doar cavitatea abdominală",
       "E. Spaţiul dintre foițele pleurale se numeşte cavitate pleurală, iar cel dintre foițele pericardice - cavitate pericardică"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-037",
-    topic: "Anatomie - Cavități",
+    topic: "Introducere în anatomie și fiziologie",
     text: "37. Care dintre următoarele afirmații sunt adevărate?",
     options: [
       "A. La nivelul capului se găsesc mici cavități (cavitatea orală, cavitatea nazală, urechea medie şi orbita)",
@@ -514,26 +515,26 @@ const demoQuestions = [
       "D. Fiecare cavitate pleurală este reprezentată de spațiul dintre foița viscerală şi foița parietală a pleurei, membrană seroasă care secretă un lichid cu rol lubrifiant",
       "E. Cavitatea pericardică se află în afara foiței parietale a pericardului"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-038",
-    topic: "Citologie - Celule procariote",
-    text: "38. Selectați afirmațiile adevărate referitoare la celulele procariote:",
+    topic: "Introducere în anatomie și fiziologie",
+    text: "38. Selectați afirmațiile adevărate referitoare la celulele e:",
     options: [
       "A. Pot prezenta doar un singur nucleu, care conţine 46 de cromozomi circulari",
       "B. Sunt lipsite de nucleu, acesta fiind prezent la celulele eucariote",
       "C. Se divid prin procesul de mitoză, la fel cu celulele eucariote",
       "D. Nu se divid prin procesul de mitoză, spre deosebire de celulele eucariote",
-      "E. Bacteriile sunt celule procariote"
+      "E. Bacteriile sunt celule e"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-039",
-    topic: "Citologie - Celule procariote și eucariote",
+    topic: "Introducere în anatomie și fiziologie",
     text: "39. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Celulele procariote se divid prin procesul de citokineză, numit şi meioză",
@@ -542,12 +543,12 @@ const demoQuestions = [
       "D. Plantele, animalele şi oamenii sunt organisme vii formate din celule procariote",
       "E. Bacteriile aparțin celulelor procariote, iar celulele animale şi cele umane sunt eucariote"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-040",
-    topic: "Citologie - Celule eucariote",
+    topic: "Introducere în anatomie și fiziologie",
     text: "40. Selectaţi afirmațiile false referitoare la celulele eucariote:",
     options: [
       "A. Se divid prin procesul de mitoză, proces prin care ADN-ul nuclear al celulei este distribuit în mod egal celor două celule fiice",
@@ -556,12 +557,12 @@ const demoQuestions = [
       "D. Intră în componența organismelor plantelor, animalelor şi omului",
       "E. Plantele şi bacteriile sunt alcătuite din celule eucariote, spre deosebire de mamifere, ale căror celule sunt eucromatinice"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-041",
-    topic: "Citologie - Celule procariote și eucariote",
+    topic: "Introducere în anatomie și fiziologie",
     text: "41. Selectați asocierile adevărate referitoare la celulele procariote şi eucariote:",
     options: [
       "A. Prezenţa citoplasmatică a mitocondriilor şi a ribozomilor - diviziune exclusiv sexuată - celulele eucariote",
@@ -570,12 +571,12 @@ const demoQuestions = [
       "D. Nucleu delimitat de membrană nucleară - prezența cromatinei/cromozomilor - celulă eucariotă",
       "E. Celulele ţesutului epitelial pavimentos simplu - prezența nucleului cu 46 de cromozomi - celule eucariote"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-042",
-    topic: "Citologie - Celule",
+    topic: "Introducere în anatomie și fiziologie",
     text: "42. Selectaţi afirmațiile false referitoare la celule:",
     options: [
       "A. Celulele eucariote includ celula vegetală, celula animală, celula umană",
@@ -584,12 +585,12 @@ const demoQuestions = [
       "D. Celulele eucariote prezintă nucleu cu cromatină/cromozomi şi se divid prin procesul de mitoză",
       "E. Bacteriile sunt celule eucariote, cu nucleu delimitat de un înveliş nuclear"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-043",
-    topic: "Citologie - Citoplasma",
+    topic: "Introducere în anatomie și fiziologie",
     text: "43. Selectaţi afirmațiile adevărate referitoare la citoplasmă:",
     options: [
       "A. Se mai numeşte sarcoplasmă la celulele musculare",
@@ -598,12 +599,12 @@ const demoQuestions = [
       "D. La nivelul ei au loc procese metabolice cum sunt ciclul Krebs sau lanțul transportor de electroni",
       "E. Este o substanță cu consistenţa unui gel, fundamentală pentru celulă"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-044",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "44. Selectați afirmațiile adevărate referitoare la membrana plasmatică:",
     options: [
       "A. Este alcătuită din proteine (transmembranare şi periferice), fosfolipide dispuse în dublu strat şi colesterol",
@@ -612,12 +613,12 @@ const demoQuestions = [
       "D. Are o structură de mozaic fluid, datorită colesterolului care îi creşte fluiditatea şi pare să plutească printre fosfolipide",
       "E. Are o structură de mozaic fluid datorită proteinelor globulare încorporate în bistratul fosfolipidic şi care par să plutească printre moleculele de lipide"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-045",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "45. Selectaţi afirmațiile false referitoare la membrana celulară:",
     options: [
       "A. Denumită şi membrana plasmatică, delimitează celulele, separându-le de mediul lor extern",
@@ -626,12 +627,12 @@ const demoQuestions = [
       "D. Nu conţine proteine, acestea fiind prezente exclusiv în nucleul celulei",
       "E. Datorită caracterului hidrofil al proteinelor globulare, are o structură de „sandwich\""
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-046",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "46. Selectați substanțele care intră în alcătuirea membranei plasmatice:",
     options: [
       "A. Glicogen şi glucoză (aparținând carbohidraţilor)",
@@ -640,12 +641,12 @@ const demoQuestions = [
       "D. Enzime cu structură glicoproteică (ATP-aza)",
       "E. Proteine, unele cu rol de enzime, iar altele cu rol de transportori ai moleculelor organice"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-047",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "47. Selectați afirmațiile adevărate referitoare la membrana plasmatică:",
     options: [
       "A. Întreaga grosime a membranei este ocupată de proteinele transmembranare, care proemină pe ambele fețe ale acesteia",
@@ -654,12 +655,12 @@ const demoQuestions = [
       "D. Conţine proteine periferice, care se extind spre citoplasmă, ocupând întreaga grosime a membranei",
       "E. Prezintă pe fața ei externă glicolipide şi glicoproteine care permit celulelor să se recunoască între ele"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-048",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "48. Selectați afirmațiile adevărate referitoare la compoziția membranei plasmatice:",
     options: [
       "A. Conţine substanțe lipidice, care includ în molecula lor două regiuni distincte: un capăt hidrofil şi unul hidrofob",
@@ -668,12 +669,12 @@ const demoQuestions = [
       "D. Conţine proteine transmembranare cu funcție de canale pentru transportul unor ioni (canale de Na+ sau de Ca2+)",
       "E. Conține proteine intramembranare care inhibă remodelarea celulară în timpul contracțiilor celulare"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-049",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "49. Fosfolipidele din membrana plasmatică:",
     options: [
       "A. Au un capăt polarizat, care conține fosfor şi este atras de apă (hidrofil)",
@@ -682,12 +683,12 @@ const demoQuestions = [
       "D. Datorită proprietăților de hidrosolubilitate, împiedică mărirea suprafeței membranei la fuzionarea acesteia cu veziculele aparatului Golgi",
       "E. Prezintă proprietăți (tensioactive) care permit membranei să îşi mărească suprafața, atunci când veziculele aparatului Golgi fuzionează cu ea"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-050",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "50. Selectați afirmațiile adevărate referitoare la fosfolipidele din structura membranei plasmatice:",
     options: [
       "A. Capetele polarizate ale moleculelor fosfolipidice din membrana plasmatică intră în contact cu moleculele de apă din mediul intracelular şi din spațiul extracelular",
@@ -696,12 +697,12 @@ const demoQuestions = [
       "D. Fosfolipidele membranare sunt responsabile de mărirea suprafeței membranei plasmatice atunci când veziculele aparatului Golgi fuzionează cu ea",
       "E. Caracterul lor hidrofil se datorează prezenţței lanțurilor de carbon din structura alcoolilor graşi"
     ],
-    correct: [],
+    correct: [0, 3],
     explanation: ""
   },
   {
     id: "bio-051",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "51. Selectați afirmațiile adevărate referitoare la diferitele tipuri de lipide din membrana plasmatică:",
     options: [
       "A. Capetele nepolarizate ale moleculelor de colesterol se află față în față în porțiunea externă a membranei plasmatice",
@@ -710,12 +711,12 @@ const demoQuestions = [
       "D. Unele dintre moleculele stratului lipidic situat spre citoplasmă au ataşate molecule de glicogen şi se numesc glicolipide",
       "E. Datorită anumitor proprietăți ale fosfolipidelor, membrana celulară îşi măreşte suprafața când veziculele aparatului Golgi fuzionează cu ea"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-052",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "52. Care dintre afirmațiile referitoare la structurile din membrana plasmatică nu sunt adevărate?",
     options: [
       "A. Lipidele membranare sunt reprezentate de molecule de colesterol şi fosfolipide",
@@ -724,12 +725,12 @@ const demoQuestions = [
       "D. Proteinele-enzime reduc fluiditatea membranei plasmatice",
       "E. Colesterolul este prezent în cantități mari în membrana plasmatică, având un rol stabilizator"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-053",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "53. Selectați afirmațiile adevărate referitoare la membrana plasmatică:",
     options: [
       "A. Reprezintă, alături de citoplasmă, un component de bază al celulei",
@@ -738,12 +739,12 @@ const demoQuestions = [
       "D. Fosfolipidele par să plutească într-un strat proteic în membrană, conferindu-i acesteia caracterul fluid",
       "E. Conține cantități mari de colesterol, un steroid prezent în grăsimile de origine animală"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-054",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "54. Selectați afirmațiile adevărate cu privire la structura și proprietățile membranei plasmatice:",
     options: [
       "A. Denumită şi membrană celulară, este alcătuită în principal din proteine şi lipide, mai ales fosfolipide",
@@ -752,12 +753,12 @@ const demoQuestions = [
       "D. Glicolipidele şi glicoproteinele de pe versantul extern al membranei plasmatice au rol în recunoaşterea intercelulară",
       "E. Pe suprafața membranei celulare se ataşează proteine periferice, care vor proemina spre citoplasmă"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-055",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "55. Care dintre următoarele informații referitoare la membrana plasmatică (celulară) nu sunt corecte?",
     options: [
       "A. Este compusă în principal din colesterol (steroid animal) şi nu conține proteine şi fosfolipide",
@@ -766,12 +767,12 @@ const demoQuestions = [
       "D. Este impermeabilă pentru orice tip de molecule, indiferent de dimensiunea lor, permițând doar trecerea unor ioni înspre şi dinspre citoplasmă",
       "E. Controlează schimburile de substanțe cu mediul extracelular şi prezintă un model structural denumit mozaic fluid"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-056",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "56. Selectaţi afirmațiile adevărate referitoare la moleculele de proteine prezente în membrana plasmatică:",
     options: [
       "A. Sunt de două tipuri: transmembranare şi periferice",
@@ -780,12 +781,12 @@ const demoQuestions = [
       "D. Cele de pe fața externă a membranei plasmatice se pot asocia cu molecule de glucide, formând glicoproteine",
       "E. Colinesteraza (proteină periferică membranară) creşte fluiditatea membranei plasmatice"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-057",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "57. Selectaţi afirmaţiile adevărate referitoare la moleculele de proteine prezente în membrana plasmatică:",
     options: [
       "A. Cele transmembranare pot servi ca transportori ai unor molecule organice, cum este glucoza",
@@ -794,12 +795,12 @@ const demoQuestions = [
       "D. Cele transmembranare pot servi drept canale pentru transportul ionilor prin membrana plasmatică (canalele cu poartă pentru ionii de sodiu)",
       "E. Un exemplu de proteină periferică îl constituie hemoglobina"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-058",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "58. Selectați afirmațiile adevărate referitoare la transportul prin membrana plasmatică:",
     options: [
       "A. Difuziunea reprezintă mişcarea moleculelor dintr-o zonă cu o concentrație mare într-una cu concentrație mică (conform gradientului de concentrație)",
@@ -808,12 +809,12 @@ const demoQuestions = [
       "D. Osmoza reprezintă difuziunea moleculelor de apă dintr-o regiune cu o concentrație mică a solvitului, într-una cu o concentrație mare de solvit",
       "E. Un exemplu de osmoză este trecerea oxigenului din alveolele pulmonare în capilare"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-059",
-    topic: "Citologie - Osmoza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "59. Care dintre afirmațiile următoare referitoare la osmoză sunt adevărate?",
     options: [
       "A. Este procesul prin care are loc eliberarea neurotransmițătorilor (cum este glicina) din celulele nervoase",
@@ -822,12 +823,12 @@ const demoQuestions = [
       "D. Are loc dinspre soluția mai diluată (concentrație mai mică de solvit) spre cea mai concentrată (concentrație mai mare de solvit)",
       "E. Realizarea ei necesită energie furnizată de scindarea adenozin-trifosfatului la adenozinmonofosfat"
     ],
-    correct: [],
+    correct: [1, 3],
     explanation: ""
   },
   {
     id: "bio-060",
-    topic: "Citologie - Soluții",
+    topic: "Introducere în anatomie și fiziologie",
     text: "60. Selectați afirmațiile false dintre cele de mai jos:",
     options: [
       "A. Solvitul este o substanță chimică dizolvată într-un lichid numit solvent",
@@ -836,12 +837,12 @@ const demoQuestions = [
       "D. Soluția care are o concentrație mai mare de apă față de cea a citoplasmei se numeşte soluție hipertonă",
       "E. Soluția care are concentrația de clorură de sodiu egală cu cea a citoplasmei este izotonă în raport cu aceasta"
     ],
-    correct: [],
+    correct: [1, 3],
     explanation: ""
   },
   {
     id: "bio-061",
-    topic: "Citologie - Osmoza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "61. Selectaţi afirmaţiile adevărate dintre cele de mai jos:",
     options: [
       "A. Celulele plasate în soluții hipertone se divid şi apoi se lizează",
@@ -850,12 +851,12 @@ const demoQuestions = [
       "D. Când celula este plasată într-un mediu hiperton, concentrația mai mare de solvit se află în afara celulei, apa iese din celulă şi aceasta se deshidratează, micşorându-se",
       "E. Osmoza se produce doar atunci când celulele sunt plasate în soluție izotonă"
     ],
-    correct: [],
+    correct: [1, 3],
     explanation: ""
   },
   {
     id: "bio-062",
-    topic: "Citologie - Membrana plasmatică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "62. Membrana plasmatică este o membrană semipermeabilă care:",
     options: [
       "A. Permite trecerea apei dintr-o regiune cu o concentrație mică a solvitului într-una cu o concentrație mare a acestuia",
@@ -864,12 +865,12 @@ const demoQuestions = [
       "D. Reprezintă împreună cu ribozomii sediul sintezei proteinelor transmembranare",
       "E. Nu permite trecerea cu uşurinţă a moleculelor mari înspre sau dinspre celulă"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-063",
-    topic: "Citologie - Osmoza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "63. Alegeți afirmațiile adevărate despre osmoză şi consecințele ei asupra eritrocitului plasat în soluții hipo-, izo- şi hipertone:",
     options: [
       "A. Osmoza reprezintă difuziunea moleculelor de apă printr-o membrană semipermeabilă, dintr-o regiune cu o concentrație mai mare a solventului într-una cu concentraţie mai mare a solvitului",
@@ -878,12 +879,12 @@ const demoQuestions = [
       "D. Dacă se plasează eritrocite într-o soluție hipotonă, concentrația de sare (solvit) va fi mai mare în interiorul eritrocitelor şi apa va pătrunde în celule, facilitând liza acestora (hemoliza eritrocitară)",
       "E. Dacă se plasează eritrocite în soluție izotonă, osmoza nu se produce, concentrația de sare fiind egală de ambele fețe ale membranei eritrocitare, iar eritrocitul îşi menține integritatea structurală"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-064",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "64. Selectați afirmațiile adevărate cu privire la transportul transmembranar:",
     options: [
       "A. Trecerea moleculelor/ionilor prin membrana plasmatică, dintr-o regiune cu concentrație mare într-una cu concentrație mică, se numeşte difuziune",
@@ -892,12 +893,12 @@ const demoQuestions = [
       "D. Când compuşii chimici sunt transportați prin membrana plasmatică dintr-o regiune cu concentrație mică într-una cu concentrație mare, transportul este activ şi implică consum de energie",
       "E. Fagocitoza este forma de exocitoză în care anumite materii solide sunt înglobate în celulă"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-065",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "65. Care dintre următoarele sunt mecanisme de transport ale unor ioni şi molecule prin membrana celulară?",
     options: [
       "A. Difuziunea (transportul activ) al moleculelor mari proteice înspre şi dinspre celulă",
@@ -906,12 +907,12 @@ const demoQuestions = [
       "D. Transportul activ - exemplu: reabsorbția ionilor de Na+ din tubul proximal al nefronului",
       "E. Cariokineza şi diapedeza leucocitelor, pentru a fagocita microorganisme"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-066",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "66. Care dintre următoarele nu sunt mecanisme de transport prin membrana celulară?",
     options: [
       "A. Mitoza şi interfaza ciclului celular",
@@ -920,12 +921,12 @@ const demoQuestions = [
       "D. Exocitoza unor produşi de secreție celulară (eliberarea neurotransmițătorilor din neuroni)",
       "E. Osmoza - mecanism de transport activ al ionilor de sodiu şi potasiu"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-067",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "67. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Fagocitoza reprezintă transportul materialului solid prin endocitoză",
@@ -934,12 +935,12 @@ const demoQuestions = [
       "D. Eliberarea unor hormoni din celulele exocrine se face prin exocitoză",
       "E. Traversarea de către oxigen a membranei eritrocitare se realizează prin difuziune"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-068",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "68. Selectați afirmațiile false cu privire la permeabilitatea membranei celulare:",
     options: [
       "A. Moleculele de oxigen trec din alveolele pulmonare în hematii prin osmoză",
@@ -948,12 +949,12 @@ const demoQuestions = [
       "D. Transportul activ se realizează în sensul gradientului de concentrație (de la concentrație mare la concentrație mică)",
       "E. Pentru desfăşurarea transportului activ transmembranar, energia se poate obține prin desfacerea unui compus care conține legături fosfat cu potențial energetic ridicat (adenozintrifosfat)"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-069",
-    topic: "Citologie - Transport transmembranar",
+    topic: "Introducere în anatomie și fiziologie",
     text: "69. Selectați afirmațiile adevărate cu privire la transportul prin membrana plasmatică:",
     options: [
       "A. Osmoza se realizează cu ajutorul proteinelor transportoare transmembranare",
@@ -962,12 +963,12 @@ const demoQuestions = [
       "D. Difuziunea facilitată se realizează cu ajutorul proteinelor transportoare transmembranare",
       "E. Transportul activ presupune trecerea moleculelor/ionilor din zone cu concentrație mică în zone cu concentrație mare, cu ajutorul proteinei transportoare şi a energiei furnizate de ATP"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-070",
-    topic: "Citologie - Transport activ",
+    topic: "Introducere în anatomie și fiziologie",
     text: "70. Selectați afirmațiile adevărate cu privire la transportul activ prin membrana plasmatică:",
     options: [
       "A. Se realizează împotriva gradientului de concentrație, cu energie furnizată prin desfacerea (hidroliza) adenozin-trifosfatului",
@@ -976,12 +977,12 @@ const demoQuestions = [
       "D. Nu necesită energie din desfacerea (hidroliza) adenozin-trifosfatului",
       "E. Una dintre formele de transport activ este difuziunea facilitată"
     ],
-    correct: [],
+    correct: [0, 1, 2],
     explanation: ""
   },
   {
     id: "bio-071",
-    topic: "Citologie - Transport activ",
+    topic: "Introducere în anatomie și fiziologie",
     text: "71. În transportul activ, substanțele chimice se deplasează dintr-o zonă cu concentrație scăzută, într-una cu concentrație crescută şi pentru aceasta este nevoie de:",
     options: [
       "A. Funcţionarea genelor care să controleze procesul de transcripție",
@@ -990,12 +991,12 @@ const demoQuestions = [
       "D. Implicarea aparatului Golgi, care să remodeleze proteinele sintetizate în ribozomi",
       "E. Implicarea mitocondriilor, care furnizează ATP prin respirație celulară"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-072",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "72. Selectați afirmațiile adevărate cu privire la endocitoză:",
     options: [
       "A. Când endocitoza implică transport de material solid prin membrană, procesul se numeşte pinocitoză",
@@ -1004,12 +1005,12 @@ const demoQuestions = [
       "D. Se desfăşoară în sens opus cu exocitoza",
       "E. Leucocitele realizează endocitoză atunci când fagocitează microbii"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-073",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "73. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. În pinocitoză celula preia în interiorul ei substanțe chimice dizolvate în apă",
@@ -1018,12 +1019,12 @@ const demoQuestions = [
       "D. În pinocitoză celula preia în interiorul ei particule solide",
       "E. Fagocitoza şi pinocitoza sunt forme de endocitoză"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-074",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "74. Selectați afirmațiile adevărate referitoare la endocitoză şi exocitoză:",
     options: [
       "A. Fagocitoza şi pinocitoza sunt forme de exocitoză",
@@ -1032,12 +1033,12 @@ const demoQuestions = [
       "D. În timpul endocitozei, după ce particula/volumul de lichid au fost înglobate, membrana se închide, delimitând o veziculă care va intra în citoplasmă",
       "E. În endocitoză se formează o veziculă care se desprinde şi migrează în spațiul extracelular"
     ],
-    correct: [],
+    correct: [1, 3],
     explanation: ""
   },
   {
     id: "bio-075",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "75. Fagocitoza este o formă de endocitoză care:",
     options: [
       "A. Este prezentă la unele elemente figurate - leucocite (globulele albe)",
@@ -1046,12 +1047,12 @@ const demoQuestions = [
       "D. Implică lizozomii, care conţin enzime pentru digestia intracelulară",
       "E. Este funcţia principală a neutrofilelor (denumite şi leucocite polimorfonucleare)"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-076",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "76. Selectați afirmațiile adevărate cu privire la procesele de endocitoză şi exocitoză:",
     options: [
       "A. În endocitoză se formează o veziculă care se desprinde şi migrează în citoplasmă",
@@ -1060,12 +1061,12 @@ const demoQuestions = [
       "D. În timpul exocitozei, substanțele se deplasează din interiorul unei celule spre mediul extracelular",
       "E. În timpul exocitozei, substanțele se deplasează din exteriorul unei celule spre mediul intracelular"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-077",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "77. Selectați afirmațiile false referitoare la endocitoză şi exocitoză:",
     options: [
       "A. Prin procesul de exocitoză se realizează secreția hormonilor de către celulele glandelor endocrine",
@@ -1074,12 +1075,12 @@ const demoQuestions = [
       "D. În timpul exocitozei, veziculele citoplasmatice delimitate de membrană migrează spre membrana celulară, cu care fuzionează",
       "E. În timpul endocitozei, veziculele citoplasmatice delimitate de membrană migrează spre membrana celulară, cu care fuzionează"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-078",
-    topic: "Citologie - Endocitoză și exocitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "78. Selectați afirmațiile adevărate referitoare la endocitoză şi exocitoză:",
     options: [
       "A. În cazul exocitozei, conținutul veziculei citoplasmatice este eliminat în mediul extracelular",
@@ -1088,12 +1089,12 @@ const demoQuestions = [
       "D. Eliberarea neurotransmițătorilor la nivelul terminaţiilor presinaptice ale celulelor musculare are loc prin procesul de exocitoză",
       "E. Pinocitoza, care presupune înglobarea în celulă de material lichid, este o formă de endocitoză"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-079",
-    topic: "Citologie - Nucleul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "79. Selectaţi afirmațiile adevărate referitoare la nucleul celulelor:",
     options: [
       "A. Este înconjurat de o membrană triplă alcătuită din fosfolipide",
@@ -1102,12 +1103,12 @@ const demoQuestions = [
       "D. Nucleul celulelor umane este înconjurat de o membrană numită membrană plasmatică",
       "E. Nucleul conține ADN (acid dezoxiribonucleic) şi histone (proteine histonice)"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-080",
-    topic: "Citologie - Nucleul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "80. Selectați răspunsurile corecte cu privire la nucleu:",
     options: [
       "A. Nucleul delimitat de membrană este prezent în celulele eucariote",
@@ -1116,12 +1117,12 @@ const demoQuestions = [
       "D. În nucleul celular, moleculele de acid ribonucleic (ARN) sunt înfăşurate în jurul complexelor de histone pentru a forma cromatina",
       "E. În timpul perioadei în care cromozomii nu se pot distinge unul de altul (în interfază), masa dispersată de ADN şi proteinele asociate lui din nucleul celular se numeşte cromatină"
     ],
-    correct: [],
+    correct: [0, 1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-081",
-    topic: "Citologie - Nucleul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "81. Selectaţi afirmațiile adevărate cu privire la nucleu:",
     options: [
       "A. Există aproximativ 30.000 de gene în nucleul fiecărei celule umane",
@@ -1130,12 +1131,12 @@ const demoQuestions = [
       "D. Este înconjurat de o membrană alcătuită din două straturi duble de fosfolipide",
       "E. Spre deosebire de membrana celulară, membrana nucleară nu este prevăzută cu pori"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-082",
-    topic: "Citologie - Nucleul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "82. Selectați afirmațiile adevărate referitoare la nucleul celulelor:",
     options: [
       "A. Forma şi dimensiunea nucleului variază de la un tip celular la altul",
@@ -1144,12 +1145,12 @@ const demoQuestions = [
       "D. Include nucleoli care conțin acid ribonucleic (ARN)",
       "E. Nucleolii sunt sediul sintezei lizozomilor"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-083",
-    topic: "Citologie - Învelișul nuclear",
+    topic: "Introducere în anatomie și fiziologie",
     text: "83. Selectați afirmațiile adevărate referitoare la învelişul nuclear:",
     options: [
       "A. Este o membrană poroasă numită membrană celulară",
@@ -1158,12 +1159,12 @@ const demoQuestions = [
       "D. Este o membrană poroasă dublă",
       "E. Controlează pasajul substanțelor între nucleu şi citoplasmă"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-084",
-    topic: "Citologie - Învelișul nuclear",
+    topic: "Introducere în anatomie și fiziologie",
     text: "84. Selectați afirmațiile false referitoare la învelişul nuclear:",
     options: [
       "A. Conţine pori care permit comunicarea nucleului cu mediul extracelular",
@@ -1172,12 +1173,12 @@ const demoQuestions = [
       "D. Controlează pasajul substanțelor între celulă şi mediul extracelular",
       "E. Conţine informația genetică pentru sinteza proteică"
     ],
-    correct: [],
+    correct: [0, 1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-085",
-    topic: "Citologie - Nucleolii",
+    topic: "Introducere în anatomie și fiziologie",
     text: "85. Selectați afirmațiile adevărate referitoare la nucleoli:",
     options: [
       "A. Sunt structuri dense prezente în nucleul celulelor",
@@ -1186,12 +1187,12 @@ const demoQuestions = [
       "D. Sunt organite care conţin enzime lizozomale",
       "E. În derularea etapei de mitoză a ciclului celular, dispar în profază şi reapar în telofază"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-086",
-    topic: "Citologie - Nucleolii",
+    topic: "Introducere în anatomie și fiziologie",
     text: "86. Selectați afirmațiile false referitoare la nucleoli:",
     options: [
       "A. Sunt structuri dense prezente în toate celulele anucleate",
@@ -1200,12 +1201,12 @@ const demoQuestions = [
       "D. Sunt corpusculi lipsiți de membrană şi care conţin ARN (acid ribonucleic)",
       "E. Sunt prezenți în eritrocite"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-087",
-    topic: "Citologie - Citoplasma",
+    topic: "Introducere în anatomie și fiziologie",
     text: "87. Selectați afirmațiile adevărate referitoare la citoplasmă:",
     options: [
       "A. Este sediul unor procese metabolice celulare",
@@ -1214,12 +1215,12 @@ const demoQuestions = [
       "D. Are o consistență solidă, fundamentală pentru celulă",
       "E. La nivelul organitelor din citoplasmă se desfăşoară diverse funcții celulare"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-088",
-    topic: "Organite celulare - Reticulul endoplasmatic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "88. Selectați afirmațiile false referitoare la reticulul endoplasmatic:",
     options: [
       "A. Are rol important în digestia celulară",
@@ -1228,12 +1229,12 @@ const demoQuestions = [
       "D. Dacă are ribozomi ataşaţi, poartă numele de reticul endoplasmatic rugos",
       "E. Reticulul endoplasmatic rugos este sediul exclusiv al sintezei şi degradării lipidelor"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-089",
-    topic: "Organite celulare - Reticulul endoplasmatic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "89. Selectați afirmațiile adevărate referitoare la reticulul endoplasmatic rugos:",
     options: [
       "A. Este implicat în sinteza proteinelor (realizată prin asamblarea aminoacizilor în ribozomii ataşaţi)",
@@ -1242,12 +1243,12 @@ const demoQuestions = [
       "D. Este un organit alcătuit dintr-un ansamblu de membrane, care se extind intracitoplasmatic şi prezintă ribozomi ataşaţi",
       "E. Are rol în sinteza proteinelor prin respirație celulară"
     ],
-    correct: [],
+    correct: [0, 3],
     explanation: ""
   },
   {
     id: "bio-090",
-    topic: "Organite celulare - Ribozomii",
+    topic: "Introducere în anatomie și fiziologie",
     text: "90. Selectați afirmațiile adevărate referitoare la ribozomi:",
     options: [
       "A. Sunt organite citoplasmatice care pot fi ataşate membranelor aparatului Golgi",
@@ -1256,12 +1257,12 @@ const demoQuestions = [
       "D. Sunt structuri submicroscopice, compuse din proteine şi ARN",
       "E. Reprezintă depozitul de ioni de calciu (Ca2+) din celulă"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-091",
-    topic: "Organite celulare - Reticulul endoplasmatic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "91. Selectați afirmațiile false referitoare la reticulul endoplasmatic:",
     options: [
       "A. Poate fi de două tipuri: neted şi rugos",
@@ -1270,12 +1271,12 @@ const demoQuestions = [
       "D. Este un organit alcătuit dintr-un ansamblu de membrane care se extind extracitoplasmatic",
       "E. La nivelul ribozomilor ataşați reticulului endoplasmatic neted are loc sinteza proteinelor prin cuplarea nucleotidelor"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-092",
-    topic: "Organite celulare - Reticulul endoplasmatic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "92. Reticulul endoplasmatic se poate descrie ca fiind:",
     options: [
       "A. Organit citoplasmatic cu rol specific în etapa de transcripție din cadrul sintezei proteinelor",
@@ -1284,12 +1285,12 @@ const demoQuestions = [
       "D. Sediu al respirației celulare, conținând sistemul transportor de electroni",
       "E. De două tipuri, neted (sediu al sintezei de lipide şi de membrane) şi rugos (care are ataşați ribozomi)"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-093",
-    topic: "Organite celulare - Lizozomii",
+    topic: "Introducere în anatomie și fiziologie",
     text: "93. Alegeţi dintre enunţurile de mai jos, pe cele care conțin prima afirmație adevărată şi cea de a doua falsă, cu referire la lizozom:",
     options: [
       "A. Conţine enzime cu rol în procesele de digestie ale celulei. Este un organit celular extern care permite deplasarea anumitor celule",
@@ -1298,12 +1299,12 @@ const demoQuestions = [
       "D. Este o sursă de săruri (clorura de sodiu, fosfat de calciu). Enzimele sale pot să degradeze particulele nutritive pătrunse în celulă",
       "E. Reprezintă o veziculă care derivă din sacii aparatului Golgi şi conține enzime pentru digestia intracelulară. Se află în celulă ataşat membranelor reticulului endoplasmatic"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-094",
-    topic: "Organite celulare - Mitocondriile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "94. Despre mitocondrii se poate afirma că:",
     options: [
       "A. Sunt organite în care se sintetizează adenozin-trifosfat (ATP) pentru nevoile energetice ale celulei",
@@ -1312,12 +1313,12 @@ const demoQuestions = [
       "D. Se găsesc în număr mare în fibra musculară striată (în vecinătatea filamentelor subţiri de actină şi a celor groase de miozină) şi furnizează ATP-ul necesar contracţiei musculare",
       "E. La nivelul lor se eliberează cea mai mare parte a energiei provenite din degradarea substanţelor de natură glucidică, lipidică sau proteică, utilizându-se oxigenul provenit din aerul inspirat"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-095",
-    topic: "Organite celulare - Mitocondriile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "95. Alegeți enunțurile care descriu corect structura şi funcția mitocondriei:",
     options: [
       "A. Considerată sac membranos cu partiție interioară, mitocondria reprezintă sediul desfăşurării ciclului acizilor tricarboxilici (CAT)",
@@ -1326,26 +1327,26 @@ const demoQuestions = [
       "D. Membrana mitocondrială externă este plicaturată sub formă de criste, la nivelul cărora se află enzime importante pentru scindarea ATP",
       "E. Membrana mitocondrială internă este plicaturată sub formă de criste şi delimitează matricea (compartimentul mitocondrial intern)"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-096",
-    topic: "Organite celulare - Aparatul Golgi",
+    topic: "Introducere în anatomie și fiziologie",
     text: "96. Selectați afirmațiile adevărate referitoare la aparatul Golgi:",
     options: [
       "A. Structura lui include saci membranoşi turtiți, de obicei curbați la capete",
       "B. Sacii se unesc între ei parțial, formând vezicule asemănătoare unor picături",
       "C. Conţine saci membranoşi cu partiție interioară, denumiți subunități mici şi mari",
-      "D. La nivelul lui au loc procesarea şi împachetarea în vezicule a proteinelor (după ce proteina sintetizată este îndepărtată din ribozomi)",
+      "D. La nivelul lui au loc procese şi împachetarea în vezicule a proteinelor (după ce proteina sintetizată este îndepărtată din ribozomi)",
       "E. Este o structură nonmembranoasă care conține pigmenți denumiți citocromi"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-097",
-    topic: "Organite celulare",
+    topic: "Introducere în anatomie și fiziologie",
     text: "97. Care dintre următoarele structuri sunt componente microscopice specializate ale celulei (organite celulare)?",
     options: [
       "A. Kinetocorul - structură care conține o proteină motorie care asigură deplasarea cromozomilor prin celulă",
@@ -1354,12 +1355,12 @@ const demoQuestions = [
       "D. Nucleolul - format din mase dense de adenozin-trifosfat (ATP)",
       "E. Mitocondria - în interiorul căreia, în procesul de respirație celulară, oxigenul se combină cu hidrogen (sub formă de protoni) şi electroni (e) ca să formeze apă"
     ],
-    correct: [],
+    correct: [1, 4],
     explanation: ""
   },
   {
     id: "bio-098",
-    topic: "Organite celulare - Mitocondriile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "98. Selectaţi afirmațiile adevărate referitoare la mitocondrie:",
     options: [
       "A. În interiorul ei, respirația celulară este completă când oxigenul se combină cu hidrogen şi electroni ca să formeze apă",
@@ -1368,12 +1369,12 @@ const demoQuestions = [
       "D. Energia produsă de mitocondrie este stocată sub formă de ADN (acid dezoxiribonucleic)",
       "E. Este un organit celular intern implicat în procesele energetice ale celulei"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-099",
-    topic: "Organite celulare - Mitocondriile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "99. Selectați afirmațiile false referitoare la mitocondrii:",
     options: [
       "A. Pentru desfăşurarea respirației celulare, mitocondriile utilizează oxigenul provenit din aerul inspirat",
@@ -1382,12 +1383,12 @@ const demoQuestions = [
       "D. Pentru că mitocondriile pot produce ATP şi în absența oxigenului, celulele supraviețuiesc doar prin procese biochimice anaerobe",
       "E. Spațiul intermembranar al mitocondriei este delimitat între matrice şi membrana mitocondrială internă"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-100",
-    topic: "Citoscheletul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "100. Alegeţi afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Sunt elemente ale citoscheletului celular filamentele intermediare, microfilamentele, microtubulii",
@@ -1396,12 +1397,12 @@ const demoQuestions = [
       "D. Toate componentele citoscheletului sunt alcătuite din subunităţi lipidice",
       "E. Centriolii în formă de tijă vor facilita distribuția cromozomilor către celulele fiice în timpul reproducerii celulare"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-101",
-    topic: "Extensii celulare - Cili și flageli",
+    topic: "Introducere în anatomie și fiziologie",
     text: "101. Care dintre următoarele afirmații sunt adevărate şi se referă la extensii ale unor celule ale corpului uman?",
     options: [
       "A. Flagelii, prezenți la celulele Leydig, participă la constituirea unui suport pentru citoplasma acestora",
@@ -1410,12 +1411,12 @@ const demoQuestions = [
       "D. Flagelul este lung şi asemănător unui fir de păr",
       "E. Cilii şi flagelii sunt ataşați corpusculilor bazali de sub membrana celulară"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-102",
-    topic: "Citoscheletul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "102. Selectaţi afirmațiile adevărate referitoare la citoscheletul celular:",
     options: [
       "A. Este o rețea interconectată de microtubuli, microfilamente şi filamente intermediare din interiorul citoplasmei",
@@ -1424,12 +1425,12 @@ const demoQuestions = [
       "D. Serveşte drept structură de suport pentru celulă şi are toate componentele alcătuite din subunități proteice",
       "E. Filamentele intermediare sunt componente ale citoscheletului celular doar la celula procariotă"
     ],
-    correct: [],
+    correct: [0,2,3],
     explanation: ""
   },
   {
     id: "bio-103",
-    topic: "Citoscheletul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "103. Selectați răspunsurile incorecte referitoare la citoscheletul celular:",
     options: [
       "A. Microtubulii şi filamentele intermediare nu sunt componente ale citoscheletului celular",
@@ -1438,12 +1439,12 @@ const demoQuestions = [
       "D. Toate componentele citoscheletului celular sunt alcătuite din subunități fosfolipidice",
       "E. Are componente asemănătoare firelor de păr, care străbat membrana celulară şi intră în nucleu"
     ],
-    correct: [],
+    correct: [0, 3 ,4],
     explanation: ""
   },
   {
     id: "bio-104",
-    topic: "Extensii celulare - Cili și flageli",
+    topic: "Introducere în anatomie și fiziologie",
     text: "104. Selectați afirmațiile adevărate referitoare la cili şi flageli:",
     options: [
       "A. Flagelul este prezent la spermatozoid şi asigură mişcarea acestuia",
@@ -1452,12 +1453,12 @@ const demoQuestions = [
       "D. Cilii sunt prezenți la nivelul celulelor tractului respirator, unde se ondulează în mod sincron",
       "E. Spre deosebire de flagel, cilii sunt imobili şi mult mai lungi decât acesta"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-105",
-    topic: "Extensii celulare - Cili și flageli",
+    topic: "Introducere în anatomie și fiziologie",
     text: "105. Selectați afirmațiile false referitoare la cili şi flageli:",
     options: [
       "A. Cilul este o structură unică, mai lungă decât flagelul",
@@ -1466,12 +1467,12 @@ const demoQuestions = [
       "D. Flagelul asigură mişcarea ovulului în trompa uterină, în vederea fecundaţiei",
       "E. Flagelul, prin mişcări ondulatorii, deplasează stratul de mucus cu particule străine prinse în el, de la suprafața celulelor tractului respirator"
     ],
-    correct: [],
+    correct: [0, 2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-106",
-    topic: "Extensii celulare - Cili și flageli",
+    topic: "Introducere în anatomie și fiziologie",
     text: "106. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. În celulele umane care căptuşesc căile aeriene superioare şi tractul respirator, cilii se ondulează sincron, eliminând mucusul cu particulele străine prinse în el",
@@ -1480,12 +1481,12 @@ const demoQuestions = [
       "D. Flagelul, prezent la nivelul spermatozoidului, asigură mişcarea acestei celule",
       "E. Cilii prezenți în epiteliul alveolelor pulmonare determină propulsia mucusului pe suprafeţele celulare"
     ],
-    correct: [],
+    correct: [0, 3],
     explanation: ""
   },
   {
     id: "bio-107",
-    topic: "Structura celulară și organitele",
+    topic: "Introducere în anatomie și fiziologie",
     text: "107. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Proteinele care oferă un cadru de sprijin pentru ARN (acid ribonucleic) în cromozomi se numesc histone",
@@ -1494,12 +1495,12 @@ const demoQuestions = [
       "D. Organitele care eliberează energia celulară din molecule de proveniență alimentară şi în care se produc moleculele de ATP (adenozin-trifosfat) sunt mitocondriile",
       "E. Principalele componente ale citoscheletului sunt filamentele intermediare, microfilamentele şi microtubulii"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-108",
-    topic: "Bioenergetică celulară",
+    topic: "Metabolism și nutriție",
     text: "108. Selectați afirmațiile adevărate referitoare la energia celulară:",
     options: [
       "A. Reacţiile chimice însoțite de eliberare de energie se numesc exergonice",
@@ -1508,12 +1509,12 @@ const demoQuestions = [
       "D. Cele trei părți ale unei molecule de adenozin-trifosfat (ATP) sunt uracilul, unitatea fosfat şi riboza",
       "E. Sursa energetică imediată folosită de majoritatea celulelor umane este adenozintrifosfatul (ATP)"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-109",
-    topic: "Bioenergetică celulară - ATP",
+    topic: "Metabolism și nutriție",
     text: "109. Despre adenozin-trifosfat (ATP) este adevărat că:",
     options: [
       "A. Atunci când elimină gruparea fosfat terminală, se eliberează energie echivalentă cu 7,3 kcal/mol",
@@ -1522,12 +1523,12 @@ const demoQuestions = [
       "D. Conţine o singură grupare fosfat cu nivel energetic ridicat, pe care o eliberează sub acţiunea ATP-azei",
       "E. În fibra musculară trebuie în permanenţă regenerat din ADP şi grupări fosfat, cu aport de energie"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-110",
-    topic: "Bioenergetică celulară",
+    topic: "Metabolism și nutriție",
     text: "110. Selectați afirmațiile false dintre cele de mai jos:",
     options: [
       "A. Energia necesară supraviețuirii celulelor corpului uman provine din alimente",
@@ -1536,12 +1537,12 @@ const demoQuestions = [
       "D. Reacțiile chimice se desfăşoară în celule fără a implica schimburi energetice",
       "E. Compuşii chimici din celule reacționează între ei automat şi se degradează spontan"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-111",
-    topic: "Enzime",
+    topic: "Metabolism și nutriție",
     text: "111. Care dintre următoarele afirmaţii caracterizează enzimele?",
     options: [
       "A. Majoritatea enzimelor au structură glicolipidică",
@@ -1550,12 +1551,12 @@ const demoQuestions = [
       "D. Participă la reacții chimice în cadrul unor căi metabolice",
       "E. Prezintă o porțiune-cheie, zona activă, la nivelul căreia se leagă moleculele de substrat"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-112",
-    topic: "Enzime",
+    topic: "Metabolism și nutriție",
     text: "112. Selectați afirmațiile adevărate referitoare la enzime:",
     options: [
       "A. Fiecare enzimă catalizează o singură reacție chimică, scăzând energia de activare necesară desfăşurării acesteia",
@@ -1564,12 +1565,12 @@ const demoQuestions = [
       "D. Substanţa asupra căreia acţionează o enzimă pentru a se obține produsul final se numeşte substrat",
       "E. Amilaza, catalaza şi peptidaza sunt exemple de proteine care acționează ca enzime asupra unor substraturi"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-113",
-    topic: "Enzime",
+    topic: "Metabolism și nutriție",
     text: "113. Selectaţi răspunsurile corecte referitoare la enzime şi la acțiunea acestora:",
     options: [
       "A. Prezintă o porţiune-cheie, zona activă, care interacționează cu substratul, accelerând obținerea produşilor finali",
@@ -1578,12 +1579,12 @@ const demoQuestions = [
       "D. Energia de activare termică a unei reacţii endergonice sau exergonice este produsă de enzime",
       "E. Temperatura influenţează viteza unei reacții catalizate enzimatic dar excesul de căldură poate provoca modificarea structurii proteice a enzimei (denaturarea ei)"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-114",
-    topic: "Enzime",
+    topic: "Metabolism și nutriție",
     text: "114. Selectați afirmațiile false referitoare la enzime:",
     options: [
       "A. Sunt catalizatori anorganici, care accelerează reacția enzimatică şi se consumă până la finalul acesteia",
@@ -1592,12 +1593,12 @@ const demoQuestions = [
       "D. Produşii unei reacții catalizate de o enzimă se numesc produşi finali",
       "E. Concentrația substratului şi aciditatea mediului în care are loc reacția catalizată enzimatic nu influențează viteza de desfăşurare a acesteia"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-115",
-    topic: "Metabolism și căi metabolice",
+    topic: "Metabolism și nutriție",
     text: "115. Care dintre afirmaţiile următoare sunt false?",
     options: [
       "A. Procesele catabolice presupun sinteza unor molecule mari, iar cele anabolice presupun degradarea unor molecule complexe",
@@ -1606,12 +1607,12 @@ const demoQuestions = [
       "D. Procesele anabolice presupun sinteza de molecule complexe (proteine, polizaharide, fosfolipide)",
       "E. Procesele anabolice presupun digestia moleculelor mari, complexe (spre exemplu, oxidarea glucozei sau a acizilor graşi)"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-116",
-    topic: "Citologie - Enzime şi organite",
+    topic: "Introducere în anatomie și fiziologie",
     text: "116. Care dintre următoarele afirmații sunt false?",
     options: [
       "A. Celulele epiteliale din tractul gastrointestinal nu se divid (spre deosebire de hematii)",
@@ -1620,12 +1621,12 @@ const demoQuestions = [
       "D. ADN-ul din structura materialului nuclear este alcătuit din nucleozide (ribozoxă + baze azotate) legate unele de altele prin legături ionice",
       "E. În interiorul mitocondriei, respirația celulară este completă atunci când are loc combinarea oxigenului cu hidrogen şi electroni pentru a forma apa"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-117",
-    topic: "Citologie - Materialul nuclear",
+    topic: "Introducere în anatomie și fiziologie",
     text: "117. Selectați afirmațiile adevărate referitoare la materialul nuclear al celulei:",
     options: [
       "A. Este compus în principal din acid dezoxiribonucleic şi dintr-un tip de proteine numite histone",
@@ -1634,12 +1635,12 @@ const demoQuestions = [
       "D. Constă din fosfolipide şi ATP, acesta din urmă alcătuit din nucleotide legate unele de altele prin legături covalente",
       "E. Se găseşte sub formă de cromatină despiralizată în faza G₁ a ciclului celular."
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-118",
-    topic: "Citologie - Materialul nuclear",
+    topic: "Introducere în anatomie și fiziologie",
     text: "118. Selectați afirmațiile false referitoare la materialul nuclear al celulei:",
     options: [
       "A. Nucleozomul este o structură cu dimensiuni electronomicroscopice, alcătuită din ADN şi complexe histonice",
@@ -1648,12 +1649,12 @@ const demoQuestions = [
       "D. Structura şi conținutul nucleului sunt implicate direct în reproducerea celulară",
       "E. Nucleozomul este alcătuit dintr-un mare număr de molecule de acid dezoxiribonucleic, în jurul cărora se înfăşoară proteina histonică"
     ],
-    correct: [],
+    correct: [1, 4],
     explanation: ""
   },
   {
     id: "bio-119",
-    topic: "Citulogică - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "119. Despre reproducerea celulară şi ciclul celular este adevărat că:",
     options: [
       "A. În anumite ţesuturi ale corpului uman celulele se divid frecvent (tract gastrointestinal), în altele se divid mai rar",
@@ -1662,12 +1663,12 @@ const demoQuestions = [
       "D. Una dintre etapele ciclului celular este interfaza formată din patru faze: profază, metafază, anafază şi telofază",
       "E. Nucleul, prin structura şi conținutul lui, este direct implicat în reproducerea celulară"
     ],
-    correct: [],
+    correct: [0, 1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-120",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "120. Selectați răspunsurile corecte referitoare la ciclul celular:",
     options: [
       "A. Perioada din cadrul ciclului celular în care ADN-ul nuclear al celulei este distribuit spre cele două celule fiice se numeşte mitoză",
@@ -1676,12 +1677,12 @@ const demoQuestions = [
       "D. În timpul fazei G2 a interfazei, celula se pregăteşte de mitoză, iar proteinele citoplasmatice se organizează într-o serie de filamente numite histone",
       "E. În faza G2 a interfazei celulele cresc, îşi îndeplinesc funcția şi se pregătesc de intrarea în mitoză"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-121",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "121. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Interfaza este perioada în care se desfăşoară toate activitățile specifice unei celule",
@@ -1690,12 +1691,12 @@ const demoQuestions = [
       "D. Ciclul celular constă în patru faze distincte, care se desfăşoară în ordinea: anafaza, profaza, metafaza şi telofaza",
       "E. După faza S a interfazei, în urma replicării ADN-ului nuclear, celula va avea 46 de cromozomi, fiecare cu câte două cromatide per cromozom"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-122",
-    topic: "Citologie - Interfaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "122. Ciclul celular prezintă ca etape majore interfaza şi mitoza. Care dintre afirmațiile de mai jos caracterizează interfaza?",
     options: [
       "A. Este perioada ciclului celular în care ADN-ul (acidul dezoxiribonucleic) nuclear al celulei este împărțit între cele două celule fiice",
@@ -1704,12 +1705,12 @@ const demoQuestions = [
       "D. Este perioada în care se desfăşoară toate activitățile specifice unei celule",
       "E. Se mai numeşte citokineză (formarea a două celule separate)"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-123",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "123. Selectați afirmațiile false cu privire la ciclul celular:",
     options: [
       "A. Are două perioade majore: interfaza şi mitoza",
@@ -1718,12 +1719,12 @@ const demoQuestions = [
       "D. În faza S a interfazei, ADN-ul (acidul dezoxoribonucleic) nuclear se replică, dar nu apare sub formă de cromozomi, ci sub formă de cromatină",
       "E. În faza S, prin procesul de replicare a ADN-ului (acidului dezoxiribonucleic), cele 46 de cromatide citoplasmatice (care formează cromatina nucleară) îşi sintetizează câte două copii identice"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-124",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "124. Alegeţi asocierile corecte referitoare la ciclul celular şi la fazele (etapele) sale:",
     options: [
       "A. Interfaza - replicarea ADN-ului - desfăşurarea activităților specifice celulei",
@@ -1732,12 +1733,12 @@ const demoQuestions = [
       "D. Ciclul celular - derularea a trei faze distincte - profaza, metafaza şi telofaza - finalizare prin meioză",
       "E. Faza G1 din interfază - sinteză de proteine structurale - creştere dimensională a celulei – cromatină despiralizată"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-125",
-    topic: "Citologie - Cromozomi şi cromatină",
+    topic: "Introducere în anatomie și fiziologie",
     text: "125. Despre cromatide, cromozomi şi cromatină este adevărat că:",
     options: [
       "A. Se prezintă sub formă de structuri fibrilare sau granulare vizibile cu ochiul liber",
@@ -1746,12 +1747,12 @@ const demoQuestions = [
       "D. Conțin ADN (acid dezoxiribonucleic) şi proteine asociate acestuia, denumite histone",
       "E. Nu conțin ARN (acid ribonucleic)"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-126",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "126. Selectați afirmațiile adevărate referitoare la mitoză:",
     options: [
       "A. Este una dintre cele două perioade ale ciclului celular, alături de interfază",
@@ -1760,12 +1761,12 @@ const demoQuestions = [
       "D. După mitoză urmează faza S, etapă a interfazei",
       "E. Este singura perioadă în care celula sintetizează proteine structurale"
     ],
-    correct: [],
+    correct: [0, 2],
     explanation: ""
   },
   {
     id: "bio-127",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "127. Selectați informațiile corecte referitoare la mitoză:",
     options: [
       "A. Este un proces continuu care cuprinde mai multe etape succesive (profaza, metafază, anafază şi telofază)",
@@ -1774,12 +1775,12 @@ const demoQuestions = [
       "D. Când cromozomii ajung la polii opuşi ai celulei, spiralizându-se pentru a forma cromatina, celula se află în telofază",
       "E. Când cromozomii ajung la polii opuşi ai celulei, despiralizându-se şi dispersându-se pentru a forma cromatina, celula se află în telofază"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-128",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "128. Selectați asocierile adevărate referitoare la evenimentele derulate în timpul mitozei:",
     options: [
       "A. La începutul profazei - condensarea cromatinei şi formarea de filamente vizibile",
@@ -1788,12 +1789,12 @@ const demoQuestions = [
       "D. În timpul metafazei - alinierea perechilor de cromatide în planul ecuatorial (alinierea centromerilor în placa metafazică)",
       "E. În timpul telofazei - despiralizarea şi dispersarea cromozomilor ajunşi la polii opuşi ai celulei, pentru a forma mase de cromatină"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-129",
-    topic: "Citologie - ARN",
+    topic: "Introducere în anatomie și fiziologie",
     text: "129. ARN-ul (acidul ribonucleic) este conținut în celulă într-o serie de structuri, cu excepția:",
     options: [
       "A. Ribozomilor, la nivelul cărora are loc sinteza proteinelor",
@@ -1802,12 +1803,12 @@ const demoQuestions = [
       "D. Moleculelor care transportă aminoacizii la ribozomi în timpul sintezei proteice",
       "E. Cromatinei despiralizate din metafaza ciclului celular"
     ],
-    correct: [],
+    correct: [2, 4],
     explanation: ""
   },
   {
     id: "bio-130",
-    topic: "Citologie - Faza G1",
+    topic: "Introducere în anatomie și fiziologie",
     text: "130. Selectați afirmațiile adevărate referitoare la faza G1 din interfază:",
     options: [
       "A. Este perioada în care celula sintetizează proteine structurale",
@@ -1816,12 +1817,12 @@ const demoQuestions = [
       "D. În această etapă, celula creşte în dimensiuni",
       "E. În această etapă are loc replicarea ADN-ului (acidului dezoxiribonucleic) nuclear"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-131",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "131. Selectați asocierile corecte dintre cele de mai jos referitoare la ciclul celular:",
     options: [
       "A. Faza G1 - urmează mitozei - sinteză de proteine structurale şi enzime - creştere în dimensiuni a celulei",
@@ -1830,12 +1831,12 @@ const demoQuestions = [
       "D. Faza G2 - continuă creşterea celulară - continuă desfășurarea funcțiilor celulei",
       "E. Faza S - sinteza ADN-ului - citokineză – sinteza ARN-ului"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-132",
-    topic: "Citologie - Faza S",
+    topic: "Introducere în anatomie și fiziologie",
     text: "132. Selectați afirmațiile adevărate referitoare la faza S a ciclului celular:",
     options: [
       "A. La sfârşitul acestei faze, cantitatea de ADN (acid dezoxiribonucleic) nuclear va fi dublă comparativ cu cea din faza G2",
@@ -1844,12 +1845,12 @@ const demoQuestions = [
       "D. Este o etapă a mitozei, ca şi metafaza",
       "E. În această fază, cromozomii nucleari nu sunt vizibili"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-133",
-    topic: "Citologie - Ciclul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "133. Despre succesiunea evenimentelor derulate în ciclul celular se poate afirma că:",
     options: [
       "A. Faza G urmează anafazei şi precede faza S",
@@ -1858,12 +1859,12 @@ const demoQuestions = [
       "D. Profaza târzie urmează după anafază",
       "E. Anafaza precede metafaza şi urmează telofazei"
     ],
-    correct: [],
+    correct: [1],
     explanation: ""
   },
   {
     id: "bio-134",
-    topic: "Citologie - Faza G1",
+    topic: "Introducere în anatomie și fiziologie",
     text: "134. Despre faza G1 a ciclului celular nu este adevărat că:",
     options: [
       "A. Acum are loc sinteza de proteine structurale şi de enzime, fără replicarea ADN-ului (acid dezoxiribonucleic)",
@@ -1872,12 +1873,12 @@ const demoQuestions = [
       "D. Acum au loc activități normale ale celulei iar cromozomii se află sub formă de cromatină despiralizată",
       "E. Este denumită şi citokineză, finalizându-se prin separarea celor două celule fiice"
     ],
-    correct: [],
+    correct: [1, 4],
     explanation: ""
   },
   {
     id: "bio-135",
-    topic: "Citologie - Faza G2",
+    topic: "Introducere în anatomie și fiziologie",
     text: "135. Selectați afirmațiile false referitoare la faza G2 a ciclului celular:",
     options: [
       "A. Este perioada în care celula se pregăteşte pentru intrarea în telofază",
@@ -1886,12 +1887,12 @@ const demoQuestions = [
       "D. Are loc înaintea fazei S de replicare a acidului dezoxiribonucleic",
       "E. Cromozomii sunt spiralizați, cu o singură cromatidă, aşezați la nivelul plăcii ecuatoriale"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-136",
-    topic: "Citologie - Fusul de diviziune",
+    topic: "Introducere în anatomie și fiziologie",
     text: "136. Selectați afirmațiile adevărate referitoare la fusul de diviziune:",
     options: [
       "A. Este alcătuit din microtubuli, structuri de natură proteică",
@@ -1900,12 +1901,12 @@ const demoQuestions = [
       "D. Este asamblat (reconstruit) pentru fiecare interfază şi dezasamblat la sfârşitul acesteia",
       "E. Filamentele lui sunt alcătuite din microtubuli"
     ],
-    correct: [],
+    correct: [0, 1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-137",
-    topic: "Citologie - Cromozomi",
+    topic: "Introducere în anatomie și fiziologie",
     text: "137. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. În celulele umane există 64 de cromozomi, fiecare cu câte o cromatidă/cromozom în faza G1 şi cu câte două cromatide/cromozom după faza S",
@@ -1914,12 +1915,12 @@ const demoQuestions = [
       "D. În mitoză, cromozomii se organizează sub formă de mononucleotide",
       "E. În metafază, cromozomii se găsesc sub formă de cromatină dispersată"
     ],
-    correct: [],
+    correct: [1, 2],
     explanation: ""
   },
   {
     id: "bio-138",
-    topic: "Citologie - Diverse",
+    topic: "Introducere în anatomie și fiziologie",
     text: "138. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. În celulele umane există 92 de cromozomi în faza G1",
@@ -1928,12 +1929,12 @@ const demoQuestions = [
       "D. În structura fiecărui nucleozom intră milioane de cromozomi",
       "E. În corpul uman, excesul de căldură poate provoca denaturarea structurii enzimelor implicate în reacțiile chimice"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-139",
-    topic: "Citologie - Ciclul celular şi telofaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "139. Selectați răspunsurile şi asocierile corecte dintre cele de mai jos:",
     options: [
       "A. Ciclul celular - interfaza şi mitoza - repetarea creşterii şi reproducerii celulare",
@@ -1942,12 +1943,12 @@ const demoQuestions = [
       "D. Interfaza cuprinde fazele G1-S-G2",
       "E. Telofaza - urmează anafazei - despiralizarea cromozomilor ajunşi la polii opuşi ai celulei - formarea unor mase de cromatină - dezasamblarea fusului de diviziune"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-140",
-    topic: "Citologie - Mitoză şi cancer",
+    topic: "Introducere în anatomie și fiziologie",
     text: "140. Selectaţi afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Prin ciclu celular se înţelege reproducerea sexuată a celulei procariote",
@@ -1956,12 +1957,12 @@ const demoQuestions = [
       "D. În anafază, cromozomii sunt tractați spre polii opuşi ai celulei cu ajutorul filamentelor fusului de diviziune şi adoptă forma literei „V\"",
       "E. Mitoza este una dintre perioadele principale ale ciclului celular şi cuprinde mai multe etape succesive"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-141",
-    topic: "Citologie - Fazele ciclului celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "141. Selectați asocierile corecte referitoare la fazele ciclului celular:",
     options: [
       "A. Faza S - interfază - replicarea ADN (acid dezoxiribonucleic)",
@@ -1970,12 +1971,12 @@ const demoQuestions = [
       "D. Faza G1 – sinteză de enzime - cromatină despiralizată",
       "E. Faza S - mitoză - replicarea ARN-ului (acidului ribonucleic)"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-142",
-    topic: "Citologie - Succesiunea fazelor",
+    topic: "Introducere în anatomie și fiziologie",
     text: "142. Alegeți succesiunea corectă a fazelor din derularea ciclului celular:",
     options: [
       "A. S - G1 - mitoză - G2",
@@ -1984,26 +1985,26 @@ const demoQuestions = [
       "D. S1 - G - S2 - interfază",
       "E. G1 - S - G2 - profază"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-143",
-    topic: "Citologie - Mitoză în celula umană",
+    topic: "Introducere în anatomie și fiziologie",
     text: "143. Selectați afirmațiile corecte dintre cele de mai jos referitoare la o prezentare succintă a mitozei, aşa cum se desfăşoară în celula umană:",
     options: [
       "A. În metafază numărul cromatidelor se dublează prin procesul de replicare",
       "B. În profază se dezasamblează membrana nucleară şi nucleolii dispar",
       "C. În profaza târzie cromozomii au câte două cromatide surori şi se ataşează de filamentele fusului de diviziune prin intermediul kinetocorului de la nivelul centromerului",
-      "D. În metafază are loc alinierea cromozomilor la polii celulei-mamă",
+      "D. În metafază are loc alinierea cromozomilor ai polii celulei-mamă",
       "E. În anafază, câte un set de 46 de cromozomi cu o singură cromatidă migrează spre fiecare din cei doi poli ai celulei"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-144",
-    topic: "Citologie - Diverse",
+    topic: "Introducere în anatomie și fiziologie",
     text: "144. Care dintre următoarele afirmaţii sunt false?",
     options: [
       "A. Profaza reprezintă prima etapă a mitozei şi este urmată de metafază",
@@ -2012,12 +2013,12 @@ const demoQuestions = [
       "D. O enzimă conţine o porţiune cheie denumită substrat şi va acţiona asupra zonei active a produsului final",
       "E. Similară fagocitozei, exocitoza este o modalitate importantă de locomoție a celulelor secretoare"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-145",
-    topic: "Citologie - Profaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "145. Selectați afirmațiile adevărate referitoare la profază:",
     options: [
       "A. Începe cu despiralizarea cromatinei şi formarea de filamente vizibile",
@@ -2026,12 +2027,12 @@ const demoQuestions = [
       "D. În această etapă există 46 de perechi de cromatide",
       "E. În această etapă, două structuri macroscopice denumite centromeri migrează spre polii celulei"
     ],
-    correct: [],
+    correct: [1,3],
     explanation: ""
   },
   {
     id: "bio-146",
-    topic: "Citologie - Profaza în celulele umane",
+    topic: "Introducere în anatomie și fiziologie",
     text: "146. În celulele umane aflate în profază:",
     options: [
       "A. Cele două cromatide surori sunt unite într-o regiune numită centromer",
@@ -2040,12 +2041,12 @@ const demoQuestions = [
       "D. Structurile de dimensiuni microscopice - centriolii - migrează spre polii opuşi ai celulei",
       "E. Centriolii situați la polii opuşi ai celulei sunt înconjurați de microtubuli radiari, denumiţi aster"
     ],
-    correct: [],
+    correct: [0, 1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-147",
-    topic: "Citologie - Profaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "147. Selectați afirmațiile false referitoare la profază:",
     options: [
       "A. Fusul de diviziune se dezasamblează",
@@ -2054,12 +2055,12 @@ const demoQuestions = [
       "D. Cromatidele surori (identice între ele), sunt unite la nivelul centromerului",
       "E. Cromatidele surori (identice între ele), sunt unite la nivelul asterului"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-148",
-    topic: "Citologie - Profaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "148. Selectați afirmațiile adevărate referitoare la evenimentele din profază:",
     options: [
       "A. Centriolii migrează spre polii celulei",
@@ -2068,12 +2069,12 @@ const demoQuestions = [
       "D. Cromatidele se ataşează de filamentele fusului de diviziune prin intermediul unei structuri de la nivelul centromerului numită kinetocor",
       "E. Cromatidele se ataşează de membrana celulară prin intermediul centromerilor"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-149",
-    topic: "Citologie - Profaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "149. Selectați modificările care apar la nivel celular în profază:",
     options: [
       "A. Cele două cromatide ale cromozomilor se unesc printr-o formaţiune de natură lipidică numită kinetocor",
@@ -2082,12 +2083,12 @@ const demoQuestions = [
       "D. Kinetocorii conțin o proteină motorie care contribuie la deplasarea cromozomilor în celulă",
       "E. Membrana dublă a nucleului se dezasamblează şi nucleolii dispar"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-150",
-    topic: "Citologie - Metafaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "150. Selectați afirmațiile adevărate referitoare la metafază:",
     options: [
       "A. Este o etapă a mitozei care se desfăşoară după profază",
@@ -2096,12 +2097,12 @@ const demoQuestions = [
       "D. În această etapă se reface învelişul nuclear",
       "E. Placa ecuatorială se mai numeşte şi placă metafazică"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-151",
-    topic: "Citologie - Metafaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "151. Selectați afirmaţiile false referitoare la evenimentele care se desfăşoară în metafază:",
     options: [
       "A. Fusul de diviziune se dezasamblează",
@@ -2110,12 +2111,12 @@ const demoQuestions = [
       "D. Se reface învelişul nuclear",
       "E. Se dezasamblează membrana celulară"
     ],
-    correct: [],
+    correct: [0, 2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-152",
-    topic: "Citologie - Anafaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "152. Selectaţi afirmațiile adevărate referitoare la anafază:",
     options: [
       "A. Cromozomii sunt tractați spre un singur pol al celulei",
@@ -2124,12 +2125,12 @@ const demoQuestions = [
       "D. Cromozomii sunt ataşaţi de filamentele fusului de diviziune, în zona centromerului",
       "E. Cromozomii sunt ataşaţi pe placa ecuatorială."
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-153",
-    topic: "Citologie - Anafaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "153. Selectați afirmaţiile false referitoare la anafază:",
     options: [
       "A. Se desfăşoară înaintea metafazei",
@@ -2138,12 +2139,12 @@ const demoQuestions = [
       "D. Pentru că unul dintre telomere rămâne în urmă, cromozomii se deplasează spre polii celulei, luând forma literei „Y\"",
       "E. Pe măsură ce migrează, cromozomii iau forma literei „V\", fiind pe toată lungimea lor ataşați de filamentele fusului de diviziune"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-154",
-    topic: "Citologie - Telofaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "154. Selectați afirmațiile false referitoare la telofază:",
     options: [
       "A. În derularea ei, cromozomii ajung la polii opuşi ai celulei",
@@ -2152,12 +2153,12 @@ const demoQuestions = [
       "D. Cromatina se condensează şi prin dispersare, formează cromozomii care se deplasează spre poli",
       "E. Toți cromozomii ajunşi la acelaşi pol al celulei se spiralizează, se dispersează şi formează mase de cromatină"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-155",
-    topic: "Citologie - Telofaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "155. Selectați asocierile corecte referitoare la evenimentele din telofază:",
     options: [
       "A. Fus de diviziune - formare",
@@ -2166,12 +2167,12 @@ const demoQuestions = [
       "D. Înveliş nuclear - dezasamblare",
       "E. Nucleolii - reapariţie"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-156",
-    topic: "Citologie - Telofaza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "156. Selectați enunțurile care conțin câte două afirmații adevărate referitoare la evenimentele din telofază:",
     options: [
       "A. Cromozomii ajung la polii opuşi ai celulei. Se reface învelişul nuclear",
@@ -2180,12 +2181,12 @@ const demoQuestions = [
       "D. Se dezasamblează fusul de diviziune. Dispar nucleolii",
       "E. Se reface învelişul celular. Se formează cromozomii cu câte două centromere surori"
     ],
-    correct: [],
+    correct: [0, 2],
     explanation: ""
   },
   {
     id: "bio-157",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "157. Selectați evenimentele care nu se petrec în mitoză:",
     options: [
       "A. Începe condensarea cromatinei în metafază",
@@ -2194,12 +2195,12 @@ const demoQuestions = [
       "D. În metafază, toate perechile de nucleotide se aliniază la polii celulei",
       "E. În anafază, spre fiecare pol al celulei se deplasează câte 46 de cromozomi"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-158",
-    topic: "Citologie - Citokineza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "158. Selectați afirmațiile adevărate referitoare la citokineză:",
     options: [
       "A. Are loc în interfază, înaintea profazei",
@@ -2208,12 +2209,12 @@ const demoQuestions = [
       "D. Este procesul prin care citoplasma celulei care se divide se distribuie între cele două celule fiice",
       "E. Începe prin apariția unui şanţ de clivare la nivelul plăcii ecuatoriale"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-159",
-    topic: "Citologie - Citokineza şi clivajul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "159. Selectați asocierile corecte dintre cele de mai jos:",
     options: [
       "A. Şanţ de clivare - şanţ apărut la nivelul kinetocorului",
@@ -2222,12 +2223,12 @@ const demoQuestions = [
       "D. Clivaj celular - strangularea citoplasmei de către membrana celulară, prin contracția microfilamentelor, finalizată cu formarea celulelor fiice",
       "E. Mitoza şi citokineza – înlocuirea celulelor îmbătrânite şi deteriorate, prin formare de noi celule"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-160",
-    topic: "Citologie - Clivajul celular",
+    topic: "Introducere în anatomie și fiziologie",
     text: "160. Selectați afirmațiile false referitoare la clivajul celular:",
     options: [
       "A. Este posibil datorită contracției microfilamentelor",
@@ -2236,12 +2237,12 @@ const demoQuestions = [
       "D. Reprezintă separarea celor două celule fiice",
       "E. Are loc între metafază şi telofază"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-161",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "161. Selectați afirmațiile adevărate referitoare la mitoză:",
     options: [
       "A. Permite organismului să crească prin formarea de noi celule",
@@ -2250,12 +2251,12 @@ const demoQuestions = [
       "D. Cuprinde mai multe etape succesive şi alături de interfaza participă la alcătuirea ciclului celular",
       "E. Mai poartă numele de diviziune meiotică"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-162",
-    topic: "Citologie - Mitoză",
+    topic: "Introducere în anatomie și fiziologie",
     text: "162. Selectați afirmațiile adevărate cu privire la mitoză:",
     options: [
       "A. În profază, membrana nucleară şi nucleolii dispar iar cromatina se condensează",
@@ -2264,12 +2265,12 @@ const demoQuestions = [
       "D. În telofază, cromozomii se condensează, devenind vizibili şi se reasamblează nucleolii formaţi din ADN",
       "E. Pierderea controlului asupra mitozei poate avea drept cauză o mutație a ADN-ului (acidului dezoxiribonucleic)"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-163",
-    topic: "Citologie - Cromozomi şi gene",
+    topic: "Introducere în anatomie și fiziologie",
     text: "163. Selectați afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Cromozomii se despiralizează în telofază",
@@ -2278,12 +2279,12 @@ const demoQuestions = [
       "D. Există circa 30.000 de gene în nucleii celulelor umane",
       "E. Glicolipidele membranare sunt depozitarii informației genetice în celula procariotă"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-164",
-    topic: "Citologie - Cancer",
+    topic: "Introducere în anatomie și fiziologie",
     text: "164. Selectați afirmaţiile adevărate referitoare la boala canceroasă (cancer):",
     options: [
       "A. Presupune creşterea ritmului de derulare a mitozelor",
@@ -2292,12 +2293,12 @@ const demoQuestions = [
       "D. Poate să apară în urma unei mutații suferite de ADN (acidul dezoxiribonucleic)",
       "E. Nu presupune pierderea controlului mitozei, ci doar o răspândire accelerată a unor celule care funcţionează normal în organism"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-165",
-    topic: "Citologie - Cromozomi",
+    topic: "Introducere în anatomie și fiziologie",
     text: "165. Alegeți afirmațiile adevărate referitoare la cromozomi:",
     options: [
       "A. Baza azotată uracil şi monozaharidul riboză sunt substanțe organice prezente în structura cromozomilor",
@@ -2306,12 +2307,12 @@ const demoQuestions = [
       "D. Prin supraspiralizare, cromozomii vor forma cromatină condensată",
       "E. Compactarea suplimentară a ADN-ului şi formarea cromozomilor condensați se realizează prin supraspiralizarea nucleozomilor"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-166",
-    topic: "Citologie - Gene",
+    topic: "Introducere în anatomie și fiziologie",
     text: "166. Selectați afirmațiile adevărate cu privire la gene:",
     options: [
       "A. Sunt segmente funcționale ale cromozomilor",
@@ -2320,12 +2321,12 @@ const demoQuestions = [
       "D. Genele sunt ţinute sub control în timpul mitozei, cromozomul fiind compactat",
       "E. Conțin secvențe nucleotidice cu uracil şi riboză"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-167",
-    topic: "Citologie - Acizii nucleici",
+    topic: "Introducere în anatomie și fiziologie",
     text: "167. Selectați afirmațiile adevărate despre acizii nucleici:",
     options: [
       "A. ADN (acid dezoxiribonucleic) este format din baze azotate, riboză şi acid fosforic",
@@ -2334,12 +2335,12 @@ const demoQuestions = [
       "D. Pentru a forma molecule de ARNm, celula îndepărtează secvențele intercalate necodante ale ARN, denumite exoni",
       "E. Pentru a forma moleculele de ARNm final, celula îndepărtează secvențe intercalate necodante de ARN, denumite introni"
     ],
-    correct: [],
+    correct: [2, 4],
     explanation: ""
   },
   {
     id: "bio-168",
-    topic: "Citologie - Acizii nucleici",
+    topic: "Introducere în anatomie și fiziologie",
     text: "168. Despre acizii nucleici este adevărat că:",
     options: [
       "A. Succesiunea nucleotidelor (cu bazele azotate) din ADN reprezintă codul genetic şi determină secvența în care sunt legați aminoacizii în proteine",
@@ -2348,12 +2349,12 @@ const demoQuestions = [
       "D. Una dintre diferențele structurale între ARN şi ADN implică baza azotată uracil, prezentă în nucleotidele ADN-ului şi absentă în nucleotidele ARN-ului",
       "E. Sunt implicați în procesele de transcripție şi translație"
     ],
-    correct: [],
+    correct: [0, 1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-169",
-    topic: "Citologie - Cromozomi",
+    topic: "Introducere în anatomie și fiziologie",
     text: "169. Despre cromozomi se poate afirma că:",
     options: [
       "A. Reprezintă unitățile liniare în care este organizat ADN-ul în nucleul celulei",
@@ -2362,12 +2363,12 @@ const demoQuestions = [
       "D. Se formează prin condensarea ARN-ului, înfăşurarea porțiunilor de ARN în jurul complexelor de histone, formando nucleozomii, urmată de supraspiralizarea nucleozomilor",
       "E. Cromozomii condensați rezultă din despiralizarea nucleozomilor"
     ],
-    correct: [],
+    correct: [0, 1, 2],
     explanation: ""
   },
   {
     id: "bio-170",
-    topic: "Citologie - Proteine",
+    topic: "Introducere în anatomie și fiziologie",
     text: "170. Despre proteine este adevărat că:",
     options: [
       "A. Sunt compuşi anorganici, folosiți ca enzime în reacțiile chimice din celule",
@@ -2376,12 +2377,12 @@ const demoQuestions = [
       "D. Lipsesc în structura citoscheletului, format din microtubuli, microfilamente şi filamente intermediare",
       "E. Pot fi molecule specializate, care vor fi exportate de către celule pentru a fi utilizate în diverse activități extracelulare"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-171",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "171. Selectați informațiile corecte referitoare la structura şi rolul acizilor nucleici în sinteza proteică:",
     options: [
       "A. Secvența de aminoacizi dintr-o proteină este determinată de succesiunea nucleotidelor din ADN (nucleotide în componența cărora intră bazele azotate)",
@@ -2390,12 +2391,12 @@ const demoQuestions = [
       "D. Acidul nucleic responsabil de transportul informației de la ADN în citoplasmă este ARNt",
       "E. Moleculele de ARNt (ARN de transfer) se găsesc libere în citoplasmă şi transportă aminoacizii la ribozomi"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-172",
-    topic: "Citologie - Translația",
+    topic: "Introducere în anatomie și fiziologie",
     text: "172. Selectați afirmațiile adevărate referitoare la etapa de translație din cursul sintezei proteice:",
     options: [
       "A. Este procesul prin care se formează o catenă proteică prin ataşarea în lanț a bazelor azotate complementare până la apariția codonului stop",
@@ -2404,26 +2405,26 @@ const demoQuestions = [
       "D. Este etapa în care molecula de ARNm, ajunsă la ribozomi, îşi expune codonii (triplete, adică seturi de câte 3 nucleotide, care conțin bazele azotate)",
       "E. Este etapa în care codul genetic este „decodificat” într-o secvență de aminoacizi din proteină"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-173",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "173. Selectați afirmațiile adevărate referitoare la evenimentele din cadrul sintezei proteice:",
     options: [
-      "A. ARN-ul de transfer (ARNt) aduce informația conform căreia se realizează legăturile dintre aminoacizi pentru a forma lanțul proteic",
+      "A. ARN-ul de transfer (ARNt) aduce informația conform căreia se realizează legăturile dintre aminoacizii pentru a forma lanțul proteic",
       "B. Prin unirea mai multor sute de mii de aminoacizi în lizozomi rezultă o moleculă organică numită proteină",
       "C. Odată utilizată, molecula de ARNm este degradată şi nucleotidele sale se întorc în nucleu",
       "D. Odată sintetizată, proteina este îndepărtată din ribozomi pentru a putea fi procesată în continuare (ea poate fi modificată în aparatul Golgi)",
       "E. Sinteza moleculelor de ARNm are loc în nucleu, fiind declanşată de ARN-polimerază (care se leagă la una dintre catenele dublului helix al ADN, la locul unde gena va fi exprimată)"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-174",
-    topic: "Citologie - Transcripția",
+    topic: "Introducere în anatomie și fiziologie",
     text: "174. Sintetic, transcripția în procesul sintezei proteice este descrisă astfel:",
     options: [
       "A. O catenă de ARNm se formează conform secvenței de baze complementare dintr-o catenă de ADN",
@@ -2432,12 +2433,12 @@ const demoQuestions = [
       "D. Molecula ARNr este responsabilă de secvenţa de aminoacizi din structura proteinei, ea deținând anticodonul",
       "E. Odată sintetizată, molecula de ARNm transportă mesajul în citoplasmă (la ribozomi) pentru sinteza proteică"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-175",
-    topic: "Citologie - Translația",
+    topic: "Introducere în anatomie și fiziologie",
     text: "175. Sintetic, translația în procesul sintezei proteice este descrisă astfel:",
     options: [
       "A. O catenă de ARNt conținând codonul soseşte la ribozom, unde întâlneşte molecule de ARNr, care transportă acizii aminați",
@@ -2446,12 +2447,12 @@ const demoQuestions = [
       "D. Complementaritatea codon - anticodon plasează aminoacizii într-o anumită poziție, apoi aceştia sunt detaşați de lanțul proteic care creşte",
       "E. Complementaritatea codon - anticodon plasează aminoacizii într-o anumită poziție, apoi aceştia sunt ataşați lanțului proteic care creşte"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-176",
-    topic: "Citologie - Transcripția şi translația",
+    topic: "Introducere în anatomie și fiziologie",
     text: "176. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. ARN-polimeraza se leagă de una dintre catenele dublului helix al ADN, la locul unde gena va fi exprimată, declanşând transcripția",
@@ -2460,12 +2461,12 @@ const demoQuestions = [
       "D. Translația se desfășoară în interiorul lizozomilor",
       "E. ADN-ul (acidul dezoxiribonucleic) se găseşte majoritar în nucleu, dar este prezent şi în mitocondrie"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-177",
-    topic: "Citologie - Sinteza proteică şi mitocondria",
+    topic: "Introducere în anatomie și fiziologie",
     text: "177. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Translația este procesul prin care secvența de aminoacizi din proteină este codificată, rezultând o secvență de nucleotide în ADN (acid dezoxiribonucleic)",
@@ -2474,12 +2475,12 @@ const demoQuestions = [
       "D. Mitocondria este sediul respirației celulare şi furnizează ATP-ul necesar diferitelor activități celulare",
       "E. În etapa de translație din cadrul sintezei proteice, când codonul moleculei de ARNm îşi întâlneşte anticodonul de pe molecula de ARNt, bazele lor se împerechează în mod complementar, poziționând astfel aminoacidul transportat de ARNt"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-178",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "178. Alegeți afirmațiile false dintre cele de mai jos:",
     options: [
       "A. Reticulul endoplasmatic neted reprezintă sediul exclusiv al sintezei proteice",
@@ -2488,12 +2489,12 @@ const demoQuestions = [
       "D. Translația începe cu ataşarea la centrozom a moleculei de ARNm, care îşi expune bazele în seturi de câte trei (își expune anticodonii complementari)",
       "E. Molecula de ARNt prezintă anticodonul, care se împerechează cu codonul complementar de pe ARNm"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-179",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "179. Alegeți afirmațiile false dintre cele de mai jos:",
     options: [
       "A. În translație, nucleotidele ARNm se citesc în grupuri de câte două, denumite codoni",
@@ -2502,12 +2503,12 @@ const demoQuestions = [
       "D. ARNt transportă aminoacizii la lizozom, unde va avea loc translaţia informației pentru formarea lanțului peptidic",
       "E. Odată sintetizată, proteina se desprinde de ribozom, urmând a fi procesată în continuare"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-180",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "180. Care dintre informațiile de mai jos despre sinteza proteică sunt adevărate:",
     options: [
       "A. Translația („decodificarea” codului genetic într-o secvență de aminoacizi) precede transcripția",
@@ -2516,12 +2517,12 @@ const demoQuestions = [
       "D. Transcripția are loc în nucleul celulei, fiind urmată de deplasarea ARNm în citoplasmă şi de ataşarea lui la ribozomi",
       "E. Transcripția începe odată cu legarea ARN-polimerazei de una dintre catenele dublului helix al ADN-ului (acidul dezoxiribonucleic), cealaltă catenă rămânând dormantă"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-181",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "181. Alegeţi asocierile corecte referitoare la sinteza proteică:",
     options: [
       "A. Secvenţă în ADN (citozina-timină-adenină) - transcripţie - secvenţă în ARNm (guanină-adenină-uracil)",
@@ -2530,12 +2531,12 @@ const demoQuestions = [
       "D. ARNt - molecule libere în citoplasma celulelor şi care conțin anticodonul - ataşare de aminoacizi specifici şi transportul lor la ribozomi",
       "E. Introni - secvențe intercalate necodante ale ARNm - îndepărtare când se finalizează structura moleculei de ARNm"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-182",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "182. Alegeţi afirmațiile adevărate despre sinteza proteinelor:",
     options: [
       "A. Transcripția este procesul prin care codul genetic este copiat de pe ARNm într-o secvență de aminoacizi",
@@ -2544,12 +2545,12 @@ const demoQuestions = [
       "D. Enzima ARN-polimerază participă la transcripție, legându-se de catena de ADN (matriță) la locul unde gena va fi exprimată",
       "E. Enzima ARN-polimerază se deplasează de-a lungul catenei de ADN (matriță) citind nucleotidele una câte una"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-183",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "183. Pentru ca sinteza proteică să aibă loc sunt necesare următoarele:",
     options: [
       "A. Enzime (colinesteraza), ADN monocatenar, ARNm",
@@ -2558,12 +2559,12 @@ const demoQuestions = [
       "D. Enzime, ADN (acid dezoxiribonucleic), ARNm (mesager), ARNt (de transfer)",
       "E. ARNr (ribozomal), ca parte componentă a ribozomilor şi ARNm (mesager), care primeşte codul genetic al ADN-ului şi îl transportă în citoplasmă"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-184",
-    topic: "Citologie - Codul genetic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "184. Selectați afirmațiile adevărate cu privire la codul genetic şi sinteza de proteine:",
     options: [
       "A. Codonul este o secvență de trei nucleotide (în componenţa cărora intră bazele azotate) care aparține moleculeli de ARNm şi care se va împerechea cu anticodonul (complementar) de pe molecula de ARNt",
@@ -2572,12 +2573,12 @@ const demoQuestions = [
       "D. Codul genetic constă în succesiunea bazelor azotate din structura proteinelor",
       "E. Odată utilizate în sinteza proteică, moleculele de ARNm sunt degradate şi nucleotidele care au intrat în componența lor se întorc în nucleu"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-185",
-    topic: "Citologie - ARNm",
+    topic: "Introducere în anatomie și fiziologie",
     text: "185. Molecula de ARN mesager final conține:",
     options: [
       "A. Introni, dar nu exoni (secvențe intercalate care par a nu deţine informație genetică legată de sinteza proteică)",
@@ -2586,12 +2587,12 @@ const demoQuestions = [
       "D. Exoni, care deşi formează doar aproximativ 5% din totalul materialului genetic al unei celule umane, reprezintă partea exprimată a genomului uman",
       "E. Regiuni nefuncționale din structura genelor, denumite exoni"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-186",
-    topic: "Citologie - Controlul genetic",
+    topic: "Introducere în anatomie și fiziologie",
     text: "186. Selectați informațiile adevărate cu privire la controlul genetic:",
     options: [
       "A. Celula reglează şi controlează expresia genică (ea nu produce în permanență toate tipurile de proteine, ceea ce ar însemna o funcționare neeconomică)",
@@ -2600,12 +2601,12 @@ const demoQuestions = [
       "D. În timpul mitozei, supraspiralizarea şi compactarea cromozomului nu influențează accesul la gene.",
       "E. Expresia genică este controlată şi de către ARN-urile de reglare, ale căror mecanisme de acțiune sunt încă în stadiu de cercetare"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-187",
-    topic: "Citologie - Materialul nuclear",
+    topic: "Introducere în anatomie și fiziologie",
     text: "187. Alegeți afirmațiile adevărate despre materialul nuclear al celulei umane:",
     options: [
       "A. Este reprezentat de o moleculă de ADN circular care formează cromozomii în diviziune",
@@ -2614,12 +2615,12 @@ const demoQuestions = [
       "D. O genă reprezintă întreaga informație genetică conținută într-un cromozom",
       "E. ADN-ul şi histonele se organizează în nucleozomi, iar aceştia, prin supraspiralizare, formează cromozomul condensat"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-188",
-    topic: "Citologie - Nucleu şi reproducere",
+    topic: "Introducere în anatomie și fiziologie",
     text: "188. Alegeţi, dintre enunțurile de mai jos, pe cele care conțin prima afirmație adevărată şi a doua afirmație falsă:",
     options: [
       "A. Reproducerea celulară nu depinde de structura şi nici de conținutul nucleului celulei. Hematiile adulte (globulele roşii) nu se divid",
@@ -2628,12 +2629,12 @@ const demoQuestions = [
       "D. Formarea de noi celule pentru creştere, reparare sau înlocuire se realizează prin reproducere asexuată. Înainte de a fi transportate spre destinațiile finale, proteinele sunt procesate în exteriorul celulei",
       "E. După finalizarea translației, proteina poate fi trimisă lizozomilor pentru a servi ca enzimă în digestia celulară. Controlul expresiei genice apare la mai multe niveluri în celulă"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-189",
-    topic: "Citologie - Asocieri",
+    topic: "Introducere în anatomie și fiziologie",
     text: "189. Alegeţi asocierile corecte dintre cele de mai jos:",
     options: [
       "A. ATP - adenozin-trifosfat – sursă de energie imediată pentru toate celulele organismului",
@@ -2642,12 +2643,12 @@ const demoQuestions = [
       "D. Introni - secvențe necodante - nu dețin informație genetică legată de sinteza proteică - sunt prezenți în toate celulele umane nucleate",
       "E. Exoni - regiunile funcţionale din structura genelor - partea exprimată a genomului uman"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-190",
-    topic: "Histologie - Celule şi ţesuturi",
+    topic: "Introducere în anatomie și fiziologie",
     text: "190. Alegeţi asocierile corecte dintre cele de mai jos:",
     options: [
       "A. Cili - expansiuni scurte şi numeroase - celule ale tractului respirator",
@@ -2656,12 +2657,12 @@ const demoQuestions = [
       "D. Celulă cu con şi celulă cu bastonaş – neuroni receptori – retină (stratul intern)",
       "E. Mugure gustativ - celule specializate cu microvilozități - fibre nervoase senzoriale ale nervilor VII şi IX"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-191",
-    topic: "Citologie - Celule sexuale",
+    topic: "Introducere în anatomie și fiziologie",
     text: "191. Despre cele sexuale (gameţi) se poate afirma că:",
     options: [
       "A. Ovulele se formează în ovar prin procesul de oogeneză, care începe încă din viața intrauterină",
@@ -2670,12 +2671,12 @@ const demoQuestions = [
       "D. Spermatozoidul prezintă mai multe regiuni: cap, gât, piesă intermediară şi coada",
       "E. Cei doi gameți (masculin şi feminin) se pot uni în procesul fecundației, dând naştere zigotului haploid (n) cu 46 de cromozomi în nucleu"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-192",
-    topic: "Citologie - Membrana celulară",
+    topic: "Introducere în anatomie și fiziologie",
     text: "192. Despre membrana celulară (plasmatică) se poate afirma că:",
     options: [
       "A. Nu este permeabilă pentru molecule mici (apă, oxigen)",
@@ -2684,12 +2685,12 @@ const demoQuestions = [
       "D. Sarcolema poate prezenta un sistem de invaginări (sistemul tubilor transversali sau al tubilor T)",
       "E. În timpul endocitozei, o mică porțiune a membranei celulare se pliază şi înglobează particule din interiorul celulei, pe care le va elimina în exterior"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-193",
-    topic: "Bioenergetică şi metabolism",
+    topic: "Metabolism și nutriție",
     text: "193. Despre relația celule - energie sunt adevărate următoarele:",
     options: [
       "A. Fiecare reacție chimică a organismului implică schimb de energie",
@@ -2698,12 +2699,12 @@ const demoQuestions = [
       "D. O cale metabolică este o secvență de transformări fizice desfăşurată exclusiv în exteriorul celulei",
       "E. Pentru a se declanşa o reacție chimică, este nevoie de un aport energetic denumit energie de activare"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-194",
-    topic: "Citologie - Osmoza",
+    topic: "Introducere în anatomie și fiziologie",
     text: "194. Referitor la osmoză, este adevărat că:",
     options: [
       "A. Dacă celulele umane sunt introduse într-o soluție hipertonă, concentrația mai mare de solvit se află în interiorul celulelor",
@@ -2712,12 +2713,12 @@ const demoQuestions = [
       "D. În cazul unei celule umane introduse într-o soluție hipotonă, concentrația mai mică de sare se află în exteriorul celulei",
       "E. Osmoza reprezintă difuziunea moleculelor de apă printr-o membrană impermeabilă, dinspre soluția hipotonă spre soluția hipertonă"
     ],
-    correct: [],
+    correct: [1, 2, 3],
     explanation: ""
   },
   {
     id: "bio-195",
-    topic: "Anatomie - Sisteme de organe",
+    topic: "Introducere în anatomie și fiziologie",
     text: "195. Alegeți asocierile corecte referitoare la sistemele de organe, componentele lor majore şi funcțiile lor:",
     options: [
       "A. Scheletul - protejează corpul - oferă suport pentru locomoție - conține oasele corpului",
@@ -2726,12 +2727,12 @@ const demoQuestions = [
       "D. Sistemul endocrin - coordonare şi integrare chimică a activităților organismului - hipofiza, tiroida, alte glande endocrine",
       "E. Sistemul nervos - include encefalul, măduva spinării, nervii - coordonează funcțiile organismului"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-196",
-    topic: "Anatomie - Sisteme de organe",
+    topic: "Introducere în anatomie și fiziologie",
     text: "196. Alegeţi răspunsurile greşite dintre cele de mai jos:",
     options: [
       "A. Tegumentul, ca sistem de organe, include pielea, fără să includă părul, unghiile şi glandele sudoripare",
@@ -2740,12 +2741,12 @@ const demoQuestions = [
       "D. Sistemul imun este în strânsă legătură cu sistemul limfatic şi funcționează prin intermediul celulelor acestuia (limfocite T, limfocite B)",
       "E. Sistemul nervos interacţionează cu agenţi străini şi asigură imunitatea corpului"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-197",
-    topic: "Fiziologie - Funcțiile organismului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "197. Alegeţi afirmațiile adevărate despre diferitele funcții ale organismului uman şi ale componentelor sale:",
     options: [
       "A. Organismul uman are aceleaşi funcții cu ale celorlalte viețuitoare şi cu ale structurilor anorganice (lipsite de viață)",
@@ -2754,12 +2755,12 @@ const demoQuestions = [
       "D. Digestia, respirația, circulația şi excreția sunt adaptate şi pentru furnizarea de materie primă metabolismului, dar şi pentru îndepărtarea produşilor săi de degradare",
       "E. Mişcarea şi excreția reprezintă funcții ale unor structuri specializate ale organismului"
     ],
-    correct: [],
+    correct: [1, 2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-198",
-    topic: "Fiziologie - Funcțiile organismului",
+    topic: "Introducere în anatomie și fiziologie",
     text: "198. Sunt funcții ale diferitelor structuri ale organismului sau ale organismului întreg:",
     options: [
       "A. Mişcarea - rezultat al contracției celulelor musculare",
@@ -2768,12 +2769,12 @@ const demoQuestions = [
       "D. Reproducerea sexuată şi asexuată",
       "E. Conductibilitatea - răspunsul organismului la un stimul extern sau intern"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-199",
-    topic: "Anatomie - Cavitatea abdomino-pelviană",
+    topic: "Introducere în anatomie și fiziologie",
     text: "199. Despre diviziunile suplimentare ale cavității abdomino-pelviene, este adevărat că:",
     options: [
       "A. Se descriu două regiuni ombilicale şi două regiuni epigastrice (drepte şi stângi)",
@@ -2782,12 +2783,12 @@ const demoQuestions = [
       "D. Lateral de regiunea epigastrică se află hipocondrul drept şi hipocondrul stâng",
       "E. Lateral de regiunea hipogastrică se află regiunile inghinale (iliace) dreaptă şi stângă"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-200",
-    topic: "Citologie - Organite celulare",
+    topic: "Introducere în anatomie și fiziologie",
     text: "200. Alegeţi afirmaţiile adevărate dintre cele de mai jos, referitoare la organitele celulei şi la funcțiile lor:",
     options: [
       "A. În mitocondrie, energia rezultată din degradarea moleculelor glucidice, lipidice sau de natură proteică, este folosită pentru a forma molecule de adenozin-trifosfat, care servesc nevoilor energetice ale celulei",
@@ -2796,12 +2797,12 @@ const demoQuestions = [
       "D. Centrozomul este poziționat în vecinătatea nucleului, fiind format din doi centrioli în formă de tijă şi intervine în procesul de diviziune celulară (mitoză)",
       "E. Lizozomii sunt saci membranoşi care conţin enzime pentru digestia intracelulară"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-201",
-    topic: "Citologie - Proteine",
+    topic: "Introducere în anatomie și fiziologie",
     text: "201. Următoarele afirmații referitoare la diverse structuri de natură proteică sunt adevărate:",
     options: [
       "A. Intră în alcătuirea citoscheletului, o rețea intracelulară de atomi, protoni şi ioni",
@@ -2810,12 +2811,12 @@ const demoQuestions = [
       "D. Pentru a putea fi utilizată în catabolismul energetic, proteinele sunt mai întâi scindate în aminoacizi",
       "E. Excesul de căldură poate provoca modificarea structurii proteinelor (denaturarea)"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-202",
-    topic: "Citologie - Citoscheletul",
+    topic: "Introducere în anatomie și fiziologie",
     text: "202. Care dintre următoarele afirmațil referitoare la citoschelet sunt adevărate?",
     options: [
       "A. Este o rețea interconectată de fibre, filamente şi molecule prezente în nucleul celulelor",
@@ -2824,12 +2825,12 @@ const demoQuestions = [
       "D. Toate componentele citoscheletului sunt alcătuite din subunități lipidice",
       "E. Toate elementele componente ale citoscheletului sunt de natură proteică"
     ],
-    correct: [],
+    correct: [2, 4],
     explanation: ""
   },
   {
     id: "bio-203",
-    topic: "Citologie - Mitocondriile",
+    topic: "Introducere în anatomie și fiziologie",
     text: "203. Selectați afirmațiile false referitoare la mitocondrii:",
     options: [
       "A. Sunt organite intracitoplasmatice în care are loc degradarea sărurilor minerale",
@@ -2838,12 +2839,12 @@ const demoQuestions = [
       "D. Pentru producerea de ATP (adenozin-trifosfat), mitocondriile nu au nevoie de prezența oxigenului",
       "E. Sunt sediul glicolizei anaerobe, furnizând astfel o mare cantitate de energie"
     ],
-    correct: [],
+    correct: [0, 2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-204",
-    topic: "Citologie - Organite citoplasmatice",
+    topic: "Introducere în anatomie și fiziologie",
     text: "204. Care dintre următoarele afirmații referitoare la organitele citoplasmatice sunt false?",
     options: [
       "A. La nivelul organitelor citoplasmatice se desfăşoară diverse funcții celulare",
@@ -2852,12 +2853,12 @@ const demoQuestions = [
       "D. Reticulul endoplasmatic neted specializat din citoplasma unei fibre musculare se numeşte sarcoplasmic (sarcoplasmatic)",
       "E. Aparatul Golgi este alcătuit dintr-o structură non-membranoasă compusă din doi centrioli în formă de tijă"
     ],
-    correct: [],
+    correct: [1, 2, 4],
     explanation: ""
   },
   {
     id: "bio-205",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "205. Care dintre afirmaţiile următoare sunt false?",
     options: [
       "A. Sinteza ARN-ului mesager (ARNm) se numeşte transcripție şi se desfăşoară în citoplasmă",
@@ -2866,12 +2867,12 @@ const demoQuestions = [
       "D. După ce a fost sintetizat prin procesul de translaţie, ARN-ul mesager (ARNm) trece din citoplasmă în nucleu printr-un por nuclear",
       "E. Translaţia începe cu ataşarea moleculei de ARNm la ribozom"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-206",
-    topic: "Citologie - Structura ARN",
+    topic: "Introducere în anatomie și fiziologie",
     text: "206. Selectați afirmațiile adevărate referitoare la structura ARN şi diferitele tipuri de ARN:",
     options: [
       "A. ARN-ul ribozomal (ARNr) intră în structura ribozomilor, organite la nivelul cărora are loc legarea acizilor graşi între ei pentru formarea proteinelor",
@@ -2880,12 +2881,12 @@ const demoQuestions = [
       "D. Una dintre diferenţele structurale între ARN şi ADN este prezența pentozei riboză în ARN (şi absenţa ei în ADN, unde se regăseşte dezoxiriboza)",
       "E. Moleculele de ARN de transfer (ARNt) transportă aminoacizii la ribozomi în timpul sintezei proteice"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   },
   {
     id: "bio-207",
-    topic: "Citologie - Transcripția",
+    topic: "Introducere în anatomie și fiziologie",
     text: "207. Selectați afirmațiile adevărate referitoare la procesul de transcripţie:",
     options: [
       "A. Reprezintă o primă etapă a sintezei proteice, etapă în care o catenă de ARNm este sintetizată conform secvenței de baze complementare dintr-o catenă de ADN",
@@ -2894,12 +2895,12 @@ const demoQuestions = [
       "D. Implică prezența enzimei ARN-polimerază, care se deplasează de-a lungul catenei de ADN, citind nucleotidele una câte una",
       "E. Alte enzime selectează nucleotidele disponibile cu baze complementare, pe care le dispun astfel încât să formeze o moleculă de ARNm, conform principiul complementarității bazelor azotate"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-208",
-    topic: "Citologie - Transcripția",
+    topic: "Introducere în anatomie și fiziologie",
     text: "208. Selectați afirmațiile false cu privire la procesul de transcripție:",
     options: [
       "A. Rezultatul acestui proces este sinteza enzimei ARN-polimerază, care va părăsi nucleul pentru a-şi exercita activitatea în citoplasmă",
@@ -2908,12 +2909,12 @@ const demoQuestions = [
       "D. În timpul derulării procesului, enzima ARN-polimerază se deplasează de-a lungul catenei de ADN (catena matriță) care va fi transcrisă în ARNm",
       "E. Atunci când se primeşte un semnal de încheiere a transcripției, catena de ADN transcrisă trece în citoplasmă, transportând mesajul genetic"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-209",
-    topic: "Citologie - Transcripția",
+    topic: "Introducere în anatomie și fiziologie",
     text: "209. Selectați afirmațiile adevărate referitoare la procesul de transcripție:",
     options: [
       "A. Molecula de ARN mesager (ARNm) rezultată conține secvențe necodante numite exoni şi regiuni funcționale numite introni",
@@ -2922,12 +2923,12 @@ const demoQuestions = [
       "D. În acest proces, molecula de ARN mesager (ARNm) este sintetizată conform principiului complementarității bazelor azotate conținute în ADN",
       "E. În cursul acestui proces, molecula de ADN este sintetizată conform secvenței complementare de baze azotate din ARN mesager (ARNm)"
     ],
-    correct: [],
+    correct: [2, 3],
     explanation: ""
   },
   {
     id: "bio-210",
-    topic: "Citologie - Transcripție şi translație",
+    topic: "Introducere în anatomie și fiziologie",
     text: "210. Despre transcripție şi translație sunt adevărate următoarele asocieri:",
     options: [
       "A. Nucleu - ADN - transcripție - ARNm - ieşire prin porul membranei nucleare",
@@ -2936,12 +2937,12 @@ const demoQuestions = [
       "D. Catenă matriță de ADN - copiere conform noncomplementarității bazelor - ARNm, ARNt - transcripție",
       "E. Citoplasmă - ribozomi - expunerea codonilor de pe ARNm - cuplarea codon-anticodon complementar de pe ARNt - poziţionarea aminoacizilor - translație"
     ],
-    correct: [],
+    correct: [0, 1, 4],
     explanation: ""
   },
   {
     id: "bio-211",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "211. Selectați enunțurile cu două afirmații adevărate:",
     options: [
       "A. ARN-ul mesager (ARNm) este sintetizat în nucleul celulei prin transcripție. ARNm primeşte codul genetic de la ADN",
@@ -2950,12 +2951,12 @@ const demoQuestions = [
       "D. Nucleotidele catenei de ARNm sintetizate se citesc în grupe de câte trei şi se numesc codoni. Odată sintetizată, proteina este îndepărtată din ribozomi, urmând să fie procesată în continuare",
       "E. Expresia genică şi sinteza proteică nu pot fi reglate şi controlate de către celulă. ARNr de la nivelul lizozomilor conține codonii şi transportă aminoacizii"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-212",
-    topic: "Citologie - Acizii nucleici",
+    topic: "Introducere în anatomie și fiziologie",
     text: "212. Selectați informațiile corecte cu privire la acizii nucleici:",
     options: [
       "A. Compoziția chimică a unui acid nucleic (ADN sau ARN) include nucleotide, care conțin baze azotate (A,T,C,G în ADN şi A,U,C,G în ARN)",
@@ -2964,12 +2965,12 @@ const demoQuestions = [
       "D. ARN-ul, alături de proteine, se regăseşte în nucleol",
       "E. ADN-ul nuclear se replică în faza G2 a ciclului celular"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-213",
-    topic: "Citologie - Acizii nucleici",
+    topic: "Introducere în anatomie și fiziologie",
     text: "213. Alegeți afirmațiile adevărate dintre cele de mai jos:",
     options: [
       "A. Bazele azotate adenină şi timină sunt complementare şi intră în compoziția acidului dezoxiribonucleic",
@@ -2978,12 +2979,12 @@ const demoQuestions = [
       "D. Odată sintetizată, proteina este îndepărtată din ribozom pentru a fi procesată în continuare (spre exemplu, modificată în aparatul Golgi)",
       "E. Uracilul, adenina şi citozina se regăsesc doar în structura moleculei de ADN"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-214",
-    topic: "Citologie - Nucleul şi ADN",
+    topic: "Introducere în anatomie și fiziologie",
     text: "214. Selectați afirmațäle adevărate dintre cele de mai jos:",
     options: [
       "A. Structura şi compoziția nucleului sunt direct implicate în reproducerea celulară",
@@ -2992,12 +2993,12 @@ const demoQuestions = [
       "D. Complexele de histone se înfășoară în jurul segmentelor de ADN, formând cromozomii",
       "E. Codul genetic constă în ordinea bazelor azotate din ADN şi determină secvența în care sunt legați aminoacizii în proteină"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-215",
-    topic: "Citologie - Proteine şi sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "215. Despre proteine şi sinteza lor este adevărat că:",
     options: [
       "A. Odată sintetizată şi îndepărtată din ribozomi, proteina poate fi utilizată de către celulă ca şi component structural celular",
@@ -3006,12 +3007,12 @@ const demoQuestions = [
       "D. O proteină poate fi modificată în aparatul Golgi şi depozitată în vezicule secretoare înainte de a fi eliberată de către celulă",
       "E. Sinteza unor proteine structurale şi a unor enzime are loc în interfaza ciclului celular (G1-S-G2)"
     ],
-    correct: [],
+    correct: [0, 3, 4],
     explanation: ""
   },
   {
     id: "bio-216",
-    topic: "Citologie - Translația",
+    topic: "Introducere în anatomie și fiziologie",
     text: "216. Alegeţi dintre afirmațiile de mai jos pe cele adevărate referitoare la structura şi rolul tipurilor de ARN în sinteza proteică:",
     options: [
       "A. O succesiune de trei nucleotide cu dezoxiriboză din componența moleculei de ARN de transfer (ARNt) poartă numele de codon",
@@ -3020,12 +3021,12 @@ const demoQuestions = [
       "D. În procesul de translație, moleculele de ARNt se ataşează de aminoacizii specifici pe care îi transportă la ribozomi, pentru a întâlni ARNm",
       "E. Procesul de translație, derulat în citoplasmă, se finalizează atunci când în molecula de ARNm este întâlnit un codon stop"
     ],
-    correct: [],
+    correct: [2, 3, 4],
     explanation: ""
   },
   {
     id: "bio-217",
-    topic: "Citologie - Translația",
+    topic: "Introducere în anatomie și fiziologie",
     text: "217. În translație evenimentele decurg astfel:",
     options: [
       "A. Când codonul moleculei de ARNm îşi întâlneşte anticodonul de pe molecula de ARNt, bazele lor se împerechează",
@@ -3034,12 +3035,12 @@ const demoQuestions = [
       "D. Ribozomul deplasează peptidul/peptida alcătuită din primii doi aminoacizi, pentru a putea ataşa un al treilea aminoacid, adus de o altă moleculă de ARNt",
       "E. După fiecare aminoacid adus la ribozom, acesta se deplasează pe ARNm cu câte doi codoni"
     ],
-    correct: [],
+    correct: [0, 2, 3],
     explanation: ""
   },
   {
     id: "bio-218",
-    topic: "Citologie - ARNm şi introni",
+    topic: "Introducere în anatomie și fiziologie",
     text: "218. Care dintre următoarele afirmaţii sunt adevărate?",
     options: [
       "A. În molecula de ARN mesager (ARNm) rezultată imediat după transcripție se găsesc secvențe intercalate de introni şi exoni",
@@ -3048,12 +3049,12 @@ const demoQuestions = [
       "D. Molecula de ARN mesager (ARNm) final, care se va ataşa la ribozom, nu conține exoni",
       "E. Posttranscripțional (după ce procesul de transcripție a avut loc), molecula de ARN mesager (ARNm) se modifică pentru a regla activitatea genică, fiind îndepărtate secvențele necodante"
     ],
-    correct: [],
+    correct: [0, 2, 4],
     explanation: ""
   },
   {
     id: "bio-219",
-    topic: "Citologie - Proteine",
+    topic: "Introducere în anatomie și fiziologie",
     text: "219. Care dintre următoarele afirmații referitoare la proteine şi sinteza proteică sunt adevărate?",
     options: [
       "A. Cea mai importantă caracteristică structurală a unei proteine este succesiunea aminoacizilor în lanțul proteic (secvența în care sunt legați aminoacizii)",
@@ -3062,12 +3063,12 @@ const demoQuestions = [
       "D. Sinteza unui lanț polipeptidic/proteic se opreşte atunci când pe ARNm apare un codon stop (codon care nu codifică aminoacizi, ci semnifică faptul că proteina este completă)",
       "E. Colagenul este o proteină care se regăseşte doar în structura țesutului conjunctiv lax"
     ],
-    correct: [],
+    correct: [0, 1, 3],
     explanation: ""
   },
   {
     id: "bio-220",
-    topic: "Citologie - Sinteza proteică",
+    topic: "Introducere în anatomie și fiziologie",
     text: "220. Care dintre următoarele afirmații sunt adevărate?",
     options: [
       "A. Funcţionând economic, o celulă produce în permanență toate tipurile de proteine",
@@ -3076,11 +3077,10 @@ const demoQuestions = [
       "D. Anumite tipuri de celule produc doar anumite tipuri de proteine (hormonul insulină este produs de către celulele beta ale insulelor Langerhans din pancreas şi nu de către celulele nervoase)",
       "E. Imediat după transcripție, molecula de ARN mesager (ARNm) suferă modificări care presupun eliminarea intronilor, păstrându-se doar exonii (partea exprimată a genomului uman) care sunt uniți pentru a forma ARNm final"
     ],
-    correct: [],
+    correct: [1, 3, 4],
     explanation: ""
   }
 ];
-
 
 
 
@@ -3437,6 +3437,122 @@ $("#clearProgress").addEventListener("click", () => {
 $("#themeToggle").addEventListener("click", () =>
   document.body.classList.toggle("dark")
 );
+
+renderStats();
+renderQuestion();
+function prepareQuestionWithOptions(q, shuffleAnswers) {
+  let optionsWithIndex = q.options.map((opt, origIndex) => ({ opt, origIndex }));
+  
+  if (shuffleAnswers) {
+    optionsWithIndex.sort(() => Math.random() - 0.5);
+  }
+  
+  let newOptions = optionsWithIndex.map(item => item.opt);
+  let originalCorrect = Array.isArray(q.correct) ? q.correct : [q.correct];
+  
+  let newCorrect = [];
+  optionsWithIndex.forEach((item, newIndex) => {
+    if (originalCorrect.includes(item.origIndex)) {
+      newCorrect.push(newIndex);
+    }
+  });
+  
+  return {
+    ...q,
+    options: newOptions,
+    correct: newCorrect
+  };
+}
+
+function startTestSession() {
+  const checkedBoxes = document.querySelectorAll(".chapter-checkbox:checked");
+  const selectedTopics = Array.from(checkedBoxes).map(cb => cb.value.toLowerCase());
+
+  if (selectedTopics.length === 0) {
+    alert("Selectează cel puțin un capitol pentru a începe testul!");
+    return;
+  }
+
+  let filtered = demoQuestions.filter(q => {
+    const qTopic = q.topic.toLowerCase();
+    return selectedTopics.some(topic => qTopic.includes(topic) || topic.includes(qTopic));
+  });
+
+  if (filtered.length === 0) {
+    filtered = [...demoQuestions];
+  }
+
+  // 1. Amestecăm ordinea întrebărilor aleatoriu
+  filtered.sort(() => Math.random() - 0.5);
+
+  // 2. Limităm la maximum 200 de grile
+  const selectedQuestions = filtered.slice(0, 200);
+
+  // 3. Verificăm bifa de amestecare a răspunsurilor
+  const shuffleAnswersToggle = document.getElementById("shuffleAnswersToggle");
+  const shuffleAnswers = shuffleAnswersToggle ? shuffleAnswersToggle.checked : true;
+
+  questions = selectedQuestions.map(q => prepareQuestionWithOptions(q, shuffleAnswers));
+
+  current = 0;
+  picks = {};
+  validated = {};
+
+  // Ascundem bara laterală (modul test)
+  const practiceLayout = document.querySelector(".practice-layout");
+  if (practiceLayout) {
+    practiceLayout.classList.add("test-mode");
+  }
+
+  const nextBtn = document.getElementById("nextQuestion");
+  if (nextBtn) {
+    nextBtn.disabled = false;
+    nextBtn.innerHTML = 'Următoarea <span>→</span>';
+  }
+
+  renderQuestion();
+}
+
+// Evenimente pentru butoane
+const applyBtn = document.getElementById("applyChapterFilter");
+if (applyBtn) {
+  applyBtn.addEventListener("click", startTestSession);
+}
+
+const selectAllBtn = document.getElementById("selectAllChapters");
+if (selectAllBtn) {
+  selectAllBtn.addEventListener("click", () => {
+    document.querySelectorAll(".chapter-checkbox").forEach(cb => cb.checked = true);
+  });
+}
+
+const deselectAllBtn = document.getElementById("deselectAllChapters");
+if (deselectAllBtn) {
+  deselectAllBtn.addEventListener("click", () => {
+    document.querySelectorAll(".chapter-checkbox").forEach(cb => cb.checked = false);
+  });
+}
+
+// Resetarea sesiunii readuce sidebar-ul la loc
+const resetBtn = document.getElementById("resetSession");
+if (resetBtn) {
+  resetBtn.addEventListener("click", () => {
+    const practiceLayout = document.querySelector(".practice-layout");
+    if (practiceLayout) {
+      practiceLayout.classList.remove("test-mode");
+    }
+    current = 0;
+    picks = {};
+    validated = {};
+    const nextBtn = document.getElementById("nextQuestion");
+    if (nextBtn) {
+      nextBtn.disabled = false;
+      nextBtn.innerHTML = 'Următoarea <span>→</span>';
+    }
+    renderQuestion();
+  });
+}
+
 
 renderStats();
 renderQuestion();
