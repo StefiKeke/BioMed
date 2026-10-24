@@ -51,7 +51,7 @@
 
     <section class="view" id="practiceView">
       <div class="page-heading"><div><p class="eyebrow">MOD DE EXERSARE</p><h1>Rezolvă grile</h1><p class="subhead">Alege răspunsul, apoi apasă „Validează răspunsul”. Feedbackul apare imediat.</p></div><button class="secondary-button" id="resetSession">↻ Reia sesiunea</button></div>
-<div class="chapter-filter">
+<div class="chapter-filter" id="setupSection">
   <div class="chapter-filter-head">
     <label><b>Alege capitolele din care vrei grile:</b></label>
     <div class="chapter-actions">
@@ -61,18 +61,34 @@
   </div>
 
   <div class="chapter-checkboxes">
+   <div class="chapter-checkboxes">
     <label><input type="checkbox" class="chapter-checkbox" value="Introducere în anatomie și fiziologie" checked> Introducere în anatomie și fiziologie</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Țesuturile" checked> Țesuturile</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Metabolism" checked> Metabolism</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Funcțiile corpului" checked> Funcțiile corpului</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Reproducerea" checked> Reproducerea</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Homeostazia" checked> Homeostazia</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Citologie - Celule procariote" checked> Citologie - Celule procariote</label><br>
-    <label><input type="checkbox" class="chapter-checkbox" value="Citologie - Membrana plasmatică" checked> Citologie - Membrana plasmatică</label>
-    <!-- Poți adăuga mai multe capitole sub această formă -->
+    <label><input type="checkbox" class="chapter-checkbox" value="Țesuturile. Sistemul tegumentar" checked> Țesuturile. Sistemul tegumentar</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Țesutul nervos. Organizarea sistemului nervos" checked> Țesutul nervos. Organizarea sistemului nervos</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Organe de simț" checked> Organe de simț</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Țesutul osos" checked> Țesutul osos</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul muscular" checked> Sistemul muscular</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul digestiv" checked> Sistemul digestiv</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sângele și sistemul imun" checked> Sângele și sistemul imun</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul cardiovascular. Sistemul limfatic" checked> Sistemul cardiovascular. Sistemul limfatic</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul respirator" checked> Sistemul respirator</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul urinar" checked> Sistemul urinar</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Glandele endocrine" checked> Glandele endocrine</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Metabolism și nutriție" checked> Metabolism și nutriție</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Sistemul reproducător" checked> Sistemul reproducător</label><br>
+    <label><input type="checkbox" class="chapter-checkbox" value="Întrebări recapitulative" checked> Întrebări recapitulative</label>
   </div>
 
-  <div style="margin-top: 15px;">
+  <div style="margin-top: 15px; border-top: 1px solid var(--border); padding-top: 15px;">
+    <label>
+      <input type="checkbox" id="shuffleAnswersToggle" checked> 
+      Amestecă variantele de răspuns (A, B, C, D, E)
+    </label>
+  </div>
+
+
+
+<div style="margin-top: 15px;">
     <button type="button" id="applyChapterFilter" class="primary-button">
       Generează test (max 200 grile) <span>→</span>
     </button>
@@ -121,6 +137,9 @@ Organizarea sistemului nervos</option>
     </section>
     <footer>BioMed • Platformă personală de antrenament <span>Creată pentru învățare, nu pentru a înlocui bibliografia oficială.</span></footer>
   </main>
+  <script src="app.js"></script>
+</body>
+</html>
   <script src="app.js"></script>
 </body>
 </html>
